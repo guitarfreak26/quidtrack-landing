@@ -12,6 +12,19 @@ const PlayBadge = ({ style }) => (
   </a>
 );
 
+const OUTGOING_CHIPS = [
+  'Netflix',
+  'Spotify',
+  'Mortgage',
+  'Rent',
+  'Council Tax',
+  'Car Finance',
+  'Home Insurance',
+  'Energy',
+  'Broadband',
+  'Gym',
+];
+
 const Nav = ({ mode, onToggleTheme }) => (
   <header className="nav-bar">
     <div className="wrap nav-inner">
@@ -42,7 +55,10 @@ const Hero = ({ headline }) => (
         <div className="hero-copy">
           <span className="hero-eyebrow"><span className="dot"/> Free to download · Pro £4.99 launch</span>
           <h1 dangerouslySetInnerHTML={{__html: headline}}/>
-          <p className="sub">Pay once, track every quid. Start free with 5 subscriptions, then unlock Pro forever when you need the whole lot.</p>
+          <p className="sub">Not just Netflix and Spotify. Track subscriptions and real UK bills — mortgage, rent, council tax, car finance, energy, broadband, insurance, all in one place.</p>
+          <div className="outgoing-strip" aria-label="Example outgoings QuidTrack can track">
+            {OUTGOING_CHIPS.map((item) => <span key={item}>{item}</span>)}
+          </div>
           <div className="hero-ctas">
             <PlayBadge/>
             <a className="btn-secondary" href="#ios">
@@ -51,7 +67,7 @@ const Hero = ({ headline }) => (
             </a>
           </div>
           <div className="hero-meta">
-            <div className="stat"><div className="n">Free</div><div className="l">Track 5 subscriptions</div></div>
+            <div className="stat"><div className="n">Free</div><div className="l">Track 5 outgoings</div></div>
             <div className="stat"><div className="n">£4.99</div><div className="l">Pro launch unlock</div></div>
             <div className="stat"><div className="n">0</div><div className="l">Bank logins required</div></div>
           </div>
@@ -71,12 +87,12 @@ const WhySection = () => (
     <div className="wrap reveal">
       <div className="eyebrow">Why QuidTrack</div>
       <h2 className="section-title">Built for Britain.<br/>Not built to rent.</h2>
-      <p className="section-lede">Most subscription trackers are American apps with pound signs bolted on, charging you £8 a month for the privilege. We did it the other way round.</p>
+      <p className="section-lede">Most subscription trackers stop at streaming apps. QuidTrack is for the whole household ledger: council tax, rent, mortgage, car finance, utilities, insurance, and the stuff you forgot you were still paying for.</p>
       <div className="cards-3">
         <div className="card-lg">
           <div className="icon-box"><Icon name="uk" size={22}/></div>
-          <h3>UK-first catalogue</h3>
-          <p>150+ UK services detected out of the box — Netflix, Sky, Octopus, BT, TV Licence, plus energy, broadband, and creditors you actually owe.</p>
+          <h3>UK-first outgoings</h3>
+          <p>150+ UK services and household obligations — Netflix, Sky, Octopus, BT, TV Licence, council tax, broadband, mortgage, rent, car finance, and more.</p>
           <div className="tag"><Icon name="check" size={14}/> Core tracking works offline</div>
         </div>
         <div className="card-lg">
@@ -88,7 +104,7 @@ const WhySection = () => (
         <div className="card-lg">
           <div className="icon-box"><Icon name="wallet" size={22}/></div>
           <h3>Free first, Pro forever</h3>
-          <p>Download free and track up to 5 subscriptions. Pro is £4.99 for the first 1,000, then £9.99 — one payment, no renewal.</p>
+          <p>Download free and track up to 5 recurring outgoings. Pro is £4.99 for the first 1,000, then £9.99 — one payment, no renewal.</p>
           <div className="tag"><Icon name="infinity" size={14}/> Pro includes future updates</div>
         </div>
       </div>
@@ -112,7 +128,7 @@ const PricingIrony = () => (
           <div className="lede">Start without paying, signing up, or handing over bank data.</div>
           <div className="divider"/>
           <div className="feats">
-            <div><span className="ico"><Icon name="check" size={16}/></span>Track up to 5 subscriptions</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>Track up to 5 recurring outgoings</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Manual entry</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>UK catalogue + cancellation links</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>local-only storage</div>
@@ -128,7 +144,7 @@ const PricingIrony = () => (
           <div className="lede">One-time. Not a trial. Not a renewal. Unlock forever on your Android devices.</div>
           <div className="divider"/>
           <div className="feats">
-            <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited subscriptions</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited bills and subscriptions</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>CSV + Emma imports</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Home-screen widgets</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Cross-device sync</div>
@@ -142,7 +158,7 @@ const PricingIrony = () => (
 );
 
 const FEATURES = [
-  { ic:'infinity',  t:'Free manual tracking', d:'Add manually — no bank data required. Free users can track up to 5 subscriptions locally.' },
+  { ic:'infinity',  t:'Free manual tracking', d:'Add manually — no bank data required. Free users can track up to 5 recurring outgoings locally.' },
   { ic:'sync',      t:'Google Drive sync',  d:'Pro sync is stored on your Google Drive, never on our servers. iCloud sync will arrive when iOS lands.' },
   { ic:'grid',      t:'Home-screen widgets',d:'Pro widgets show what you owe without unlocking the app.' },
   { ic:'calendar',  t:'Calendar view',      d:'See every charge on a month grid. Spot the weeks that quietly bleed you.' },

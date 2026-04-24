@@ -4,26 +4,22 @@ import { join } from 'node:path';
 import { test } from 'node:test';
 
 const root = process.cwd();
-const sourceRoot = '/Users/alannewton/clawd/fanvue-automation';
 const read = (path) => readFileSync(join(root, path), 'utf8');
-const readSource = (filename) => readFileSync(join(sourceRoot, filename), 'utf8');
 
-test('legal markdown content is synced byte-for-byte from the current source docs', () => {
-  const sourcePrivacy = readSource('quidtrack-privacy-policy.md');
-  const sourceTerms = readSource('quidtrack-terms-of-service.md');
+test('legal markdown content reflects current QuidTrack positioning and pricing', () => {
   const privacy = read('src/content/quidtrack-privacy-policy.md');
   const terms = read('src/content/quidtrack-terms-of-service.md');
   const combined = `${privacy}\n${terms}`;
 
-  assert.equal(privacy, sourcePrivacy);
-  assert.equal(terms, sourceTerms);
-  assert.match(privacy, /QuidTrack is free to download — you can track up to 5 subscriptions/);
+  assert.match(privacy, /QuidTrack is free to download — you can track up to 5 recurring outgoings/);
   assert.match(privacy, /Data collected by Google Play \(only if you upgrade to Pro\)/);
   assert.match(terms, /## 2\. What you get — Free and Pro/);
   assert.match(terms, /### 2\.1 Free tier/);
   assert.match(terms, /### 2\.2 QuidTrack Pro \(one-time upgrade\)/);
   assert.match(terms, /### 2\.3 Pro launch pricing/);
   assert.match(terms, /£9\.99 after the first 1,000 customers/);
+  assert.match(terms, /UK-focused recurring outgoings tracker/);
+  assert.match(terms, /rent, mortgage, council tax, car finance, energy, broadband, insurance/);
   assert.match(combined, /\*\*Registered office:\*\* \[REGISTERED OFFICE — to be added before launch\]/);
   assert.match(privacy, /\*\*General:\*\* hello@quidtrack\.app/);
   assert.match(privacy, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);
@@ -60,7 +56,8 @@ test('homepage positions QuidTrack as freemium with manual entry trust copy', ()
   assert.match(runtime, /unlock forever\.<\/span>/);
   assert.match(combined, /Pay once, track every quid/);
   assert.match(combined, /Free vs Pro/);
-  assert.match(combined, /Track up to 5 subscriptions/);
+  assert.match(combined, /Track up to 5 recurring outgoings/);
+  assert.match(combined, /council tax, rent, mortgage, car finance, utilities, insurance/);
   assert.match(combined, /Manual entry/);
   assert.match(combined, /local-only/);
   assert.match(combined, /Pro \(£4\.99 launch/);

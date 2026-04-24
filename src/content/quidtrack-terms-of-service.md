@@ -5,7 +5,7 @@
 
 ## Plain English summary
 
-QuidTrack is free to download. You can track up to 5 subscriptions without paying anything. If you want more — unlimited subscriptions, CSV and Emma imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£9.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
+QuidTrack is free to download. You can track up to 5 recurring outgoings without paying anything. If you want more — unlimited bills and subscriptions, CSV and Emma imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£9.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
 
 In return, you agree to use the app for personal use, not to pirate or resell it, and you accept that software comes with normal "we can't promise perfection" caveats.
 
@@ -21,13 +21,13 @@ These terms form a contract between you (the user) and ALARA Studios Ltd.
 
 ## 2. What you get — Free and Pro
 
-QuidTrack is a UK-focused subscription tracking app for Android (with iOS coming later).
+QuidTrack is a UK-focused recurring outgoings tracker for Android (with iOS coming later). It helps track subscriptions, bills, and household commitments such as rent, mortgage, council tax, car finance, energy, broadband, insurance, and similar repeat payments.
 
 ### 2.1 Free tier
 
 When you download QuidTrack you get the free tier at no cost. The free tier lets you:
 
-- Track up to **5 subscriptions** (added manually or, if you later upgrade to Pro, via import).
+- Track up to **5 recurring outgoings** (added manually or, if you later upgrade to Pro, via import).
 - Use our catalogue of UK services and cancellation links.
 - Keep all your data on your device — no account, no sign-up, no payment.
 
@@ -35,9 +35,9 @@ The free tier is available indefinitely. We will not retroactively downgrade or 
 
 ### 2.2 QuidTrack Pro (one-time upgrade)
 
-If you want more than 5 subscriptions, or you want the extra Pro features, you can upgrade to **QuidTrack Pro** via Google Play. Pro unlocks:
+If you want more than 5 recurring outgoings, or you want the extra Pro features, you can upgrade to **QuidTrack Pro** via Google Play. Pro unlocks:
 
-- **Unlimited subscriptions**
+- **Unlimited bills and subscriptions**
 - **CSV and Emma imports**
 - **Home-screen widgets**
 - **Cross-device sync** (Google Drive on Android, iCloud when iOS launches)
@@ -73,9 +73,9 @@ Under the UK Consumer Rights Act 2015, you also have statutory rights if the app
 
 You may:
 
-- Use the app for personal subscription tracking on the free tier (up to 5 subscriptions) or Pro (unlimited).
+- Use the app for personal recurring outgoing tracking on the free tier (up to 5 outgoings) or Pro (unlimited).
 - Install QuidTrack on any Android device. If you've upgraded to Pro, Pro features unlock on every device linked to the Google Play account that purchased Pro.
-- Add subscriptions manually, or — on Pro — import them via CSV or Emma.
+- Add recurring outgoings manually, or — on Pro — import them via CSV or Emma.
 - Sync your data via your own Google Drive account on Android (Pro feature), with iCloud sync planned when iOS launches.
 
 You may not:
@@ -87,7 +87,7 @@ You may not:
 
 ## 5. What the app does and does not do
 
-QuidTrack helps you **see** what subscriptions you have and **find** the cancellation link for each one. **QuidTrack does not cancel subscriptions on your behalf.** You cancel directly with the service provider using the link QuidTrack shows you.
+QuidTrack helps you **see** your recurring outgoings and, where relevant, **find** cancellation or account-management links. **QuidTrack does not cancel subscriptions, bills, or contracts on your behalf.** You deal directly with the provider, council, lender, landlord, insurer, or service using the link QuidTrack shows you.
 
 We make reasonable efforts to keep cancellation URLs accurate, but service providers change their websites without warning. If a link is out of date, email us and we'll fix it.
 
@@ -95,7 +95,7 @@ We make reasonable efforts to keep cancellation URLs accurate, but service provi
 
 We handle your data per our [Privacy Policy](/privacy). The short version:
 
-- We do not store your subscription data on our servers — it lives on your device.
+- We do not store your outgoings data on our servers — it lives on your device.
 - We do not read your bank statements. CSV and Emma imports (Pro) are parsed locally. Manual entry (available on free and Pro) never leaves your device.
 - Optional cloud sync (Pro) uses **your own** Google Drive on Android, with iCloud planned when iOS launches. We never see it.
 
