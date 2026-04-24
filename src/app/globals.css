@@ -443,7 +443,7 @@ body { overflow-x: hidden; }
 
 /* Section */
 section { padding: 80px 0; }
-@media (min-width: 768px) { section { padding: 120px 0; } }
+@media (min-width: 768px) { section { padding: 96px 0; } }
 .eyebrow {
   font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 16px;
@@ -501,7 +501,7 @@ section { padding: 80px 0; }
 }
 
 /* Pricing drama */
-.pricing-drama { text-align: center; padding: 120px 0; position: relative; overflow: hidden; }
+.pricing-drama { text-align: center; padding: 96px 0; position: relative; overflow: hidden; }
 .pricing-drama::before {
   content: ''; position: absolute; inset: 20% 0; pointer-events: none;
   background: radial-gradient(closest-side, var(--accent-soft), transparent 70%);
@@ -782,6 +782,7 @@ footer { padding: 72px 0 56px; border-top: 1px solid var(--hairline); }
   font: 700 15px/1.4 var(--font-text);
 }
 @media (max-width: 767px) {
+  .ios-signup { padding: 64px 0; }
   .signup-card { grid-template-columns: 1fr; padding: 24px; }
   .signup-form { flex-direction: column; align-items: stretch; }
   .signup-form .btn-pill { width: 100%; justify-content: center; }
@@ -859,7 +860,33 @@ footer { padding: 72px 0 56px; border-top: 1px solid var(--hairline); }
   border-left: 3px solid var(--accent);
   color: var(--fg-2);
 }
+.legal-intro { margin-bottom: 34px; }
+.legal-accordion-list {
+  border-top: 1px solid var(--hairline);
+  margin-top: 28px;
+}
+.legal-accordion-q { font-size: clamp(18px, 2vw, 21px); }
+.legal-chevron {
+  color: var(--fg-3);
+  flex-shrink: 0;
+  font-size: 24px;
+  line-height: 1;
+  transition: transform .3s var(--ease-ios), color .15s;
+}
+.legal-accordion-item.open .legal-chevron {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+.legal-accordion-item.open .legal-accordion-panel { max-height: none; }
+.legal-accordion-inner {
+  max-width: 65ch;
+  padding: 0 0 32px;
+}
+.legal-accordion-inner h2 { display: none; }
+.legal-accordion-inner h3:first-child { margin-top: 0; }
 @media (max-width: 767px) {
   .legal-page { padding: 72px 20px; }
   .legal-markdown h1 { font-size: 38px; }
+  .legal-accordion-q { padding: 20px 0; }
+  .legal-accordion-inner { padding-bottom: 26px; }
 }

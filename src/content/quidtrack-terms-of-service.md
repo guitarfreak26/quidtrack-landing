@@ -11,13 +11,13 @@ In return, you agree to use the app for personal use, not to pirate or resell it
 
 ## 1. About us
 
-**QuidTrack** is owned and operated by **ALARA Studios (Alan Newton, sole trader, Birmingham, UK)**.
+**QuidTrack** is owned and operated by **ALARA Studios Ltd**, a company registered in England and Wales (Company Number 16985196).
 
-**Business location:** Birmingham, UK
+**Registered office:** [REGISTERED OFFICE — to be added before launch]
 
-**Contact:** guitarfreak2689@gmail.com
+**Contact:** privacy@quidtrack.app
 
-These terms form a contract between you (the user) and ALARA Studios (Alan Newton, sole trader, Birmingham, UK).
+These terms form a contract between you (the user) and ALARA Studios Ltd.
 
 ## 2. What you're buying
 
@@ -43,7 +43,7 @@ The price is displayed in Google Play at the moment of purchase. That's the pric
 Refunds are handled by **Google Play**, not by us directly, under their standard refund policy:
 https://support.google.com/googleplay/answer/2479637
 
-Typically Google allows refunds within 48 hours of purchase with no questions asked. Beyond that, contact us at guitarfreak2689@gmail.com and we will consider requests on a case-by-case basis where there is a legitimate issue (e.g. the app does not work on your device).
+Typically Google allows refunds within 48 hours of purchase with no questions asked. Beyond that, contact us at support@quidtrack.app and we will consider requests on a case-by-case basis where there is a legitimate issue (e.g. the app does not work on your device).
 
 Under the UK Consumer Rights Act 2015, you also have statutory rights if the app is not of satisfactory quality, not fit for purpose, or not as described.
 
@@ -111,11 +111,11 @@ If we make material changes, we'll update the "Last updated" date. For existing 
 
 ## 13. Contact
 
-**General queries:** guitarfreak2689@gmail.com
-**Support / refunds:** guitarfreak2689@gmail.com
-**Privacy / UK GDPR:** guitarfreak2689@gmail.com
+**General queries:** hello@quidtrack.app
+**Support / refunds:** support@quidtrack.app
+**Privacy / UK GDPR:** privacy@quidtrack.app
 **Response time:** within 7 days for general queries, faster for urgent issues (app broken, refund dispute).
 
 ---
 
-*QuidTrack is a product of ALARA Studios (Alan Newton, sole trader, Birmingham, UK).*
+*QuidTrack is a product of ALARA Studios Ltd, a company registered in England and Wales (Company Number 16985196).*

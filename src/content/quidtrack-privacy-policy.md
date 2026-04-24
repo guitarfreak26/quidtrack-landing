@@ -15,11 +15,11 @@ If you want the full legal version, keep reading.
 
 ## 1. Who we are
 
-**Data controller:** ALARA Studios (Alan Newton, sole trader, Birmingham, UK).
+**Data controller:** ALARA Studios Ltd, a company registered in England and Wales (Company Number 16985196).
 
-**Business location:** Birmingham, UK
+**Registered office:** [REGISTERED OFFICE — to be added before launch]
 
-**Contact:** guitarfreak2689@gmail.com
+**Contact:** privacy@quidtrack.app
 
 We are the "data controller" under UK GDPR for the limited data described below.
 
@@ -86,7 +86,7 @@ You have the right to:
 - **Portability** — receive your data in a machine-readable format.
 - **Withdraw consent** at any time for anything you've opted into.
 
-To exercise any of these, email **guitarfreak2689@gmail.com**. We will respond within 30 days.
+To exercise any of these, email **privacy@quidtrack.app**. We will respond within 30 days.
 
 You also have the right to complain to the UK Information Commissioner's Office (ICO) at https://ico.org.uk or 0303 123 1113 if you believe we've mishandled your data.
 
@@ -106,10 +106,11 @@ If we make material changes, we'll update the "Last updated" date at the top and
 
 ## 11. Contact
 
-**General:** guitarfreak2689@gmail.com
-**Privacy / UK GDPR requests:** guitarfreak2689@gmail.com
+**General:** hello@quidtrack.app
+**Support / refunds:** support@quidtrack.app
+**Privacy / UK GDPR requests:** privacy@quidtrack.app
 **Response time:** within 7 days for general questions, 30 days for formal UK GDPR requests.
 
 ---
 
-*QuidTrack is a product of ALARA Studios (Alan Newton, sole trader, Birmingham, UK).*
+*QuidTrack is a product of ALARA Studios Ltd, a company registered in England and Wales (Company Number 16985196).*

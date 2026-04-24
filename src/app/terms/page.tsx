@@ -3,8 +3,8 @@ import { join } from "node:path";
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+
+import LegalMarkdownAccordions from "../legal/LegalMarkdownAccordions";
 
 export const metadata: Metadata = {
   title: "QuidTrack — Terms of Service",
@@ -22,9 +22,7 @@ export default function Page() {
       <Link href="/" className="legal-back">
         ← QuidTrack
       </Link>
-      <div className="legal-markdown">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{termsMarkdown}</ReactMarkdown>
-      </div>
+      <LegalMarkdownAccordions markdown={termsMarkdown} />
     </main>
   );
 }
