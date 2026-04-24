@@ -56,7 +56,7 @@ test('homepage positions QuidTrack as freemium with manual entry trust copy', ()
   const landingAsset = read('public/assets/6ff52c36-9765-4a37-86d7-0dcdfbca5d1f.js');
   const combined = `${runtime}\n${landingAsset}`;
 
-  assert.match(runtime, /Free to try\.<br\/>£4\.99 to/);
+  assert.match(runtime, /Free to try\.<br\/>£4\.99 to<br\/>/);
   assert.match(runtime, /unlock forever\.<\/span>/);
   assert.match(combined, /Pay once, track every quid/);
   assert.match(combined, /Free vs Pro/);
@@ -68,6 +68,20 @@ test('homepage positions QuidTrack as freemium with manual entry trust copy', ()
   assert.match(combined, /CSV \+ Emma imports/);
   assert.match(combined, /Add manually — no bank data required/);
   assert.doesNotMatch(combined, /£6\.99/);
+});
+
+test('hero headline has breathing room from phone mockups', () => {
+  const css = read('src/app/globals.css');
+  const runtime = read('src/app/LandingRuntime.tsx');
+  const landingAsset = read('public/assets/6ff52c36-9765-4a37-86d7-0dcdfbca5d1f.js');
+
+  assert.match(runtime, /£4\.99 to<br\/><span class=\\"accent\\">unlock forever/);
+  assert.match(landingAsset, /className="hero-copy"/);
+  assert.match(css, /\.hero-copy \{ position: relative; z-index: 4; min-width: 0; \}/);
+  assert.match(css, /font-size: clamp\(44px, 7vw, 84px\)/);
+  assert.match(css, /\.phones-stage \{[\s\S]*z-index: 1;/);
+  assert.match(css, /\.phones-stage \.p-left\s+\{ transform: translate\(-30px, 20px\)/);
+  assert.match(css, /@media \(min-width: 960px\) and \(max-width: 1199px\) \{\s*\.phones-stage \.p-left \{ display: none; \}\s*\}/);
 });
 
 test('landing footer exposes legal links and QuidTrack alias emails', () => {

@@ -379,14 +379,17 @@ body { overflow-x: hidden; }
 @media (min-width: 960px) {
   .hero-grid { grid-template-columns: 1.1fr 1fr; gap: 24px; }
 }
+.hero-copy { position: relative; z-index: 4; min-width: 0; }
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(44px, 8vw, 84px);
+  font-size: clamp(44px, 7vw, 84px);
   line-height: 0.98;
   letter-spacing: -0.04em;
   font-weight: 700;
   margin: 20px 0 24px;
   text-wrap: balance;
+  position: relative;
+  z-index: 4;
 }
 .hero h1 .accent { color: var(--accent); }
 .hero .sub {
@@ -412,6 +415,7 @@ body { overflow-x: hidden; }
 /* Phones grid (hero) */
 .phones-stage {
   position: relative;
+  z-index: 1;
   height: 560px;
   display: flex; align-items: center; justify-content: center;
   perspective: 1800px;
@@ -430,9 +434,12 @@ body { overflow-x: hidden; }
 @media (min-width: 960px) {
   .phones-stage .phone-wrap .phone { transform: scale(0.7); }
 }
-.phones-stage .p-left   { transform: translate(-140px, 20px) rotateY(18deg) rotateX(4deg) rotateZ(-4deg); z-index: 1; }
+.phones-stage .p-left   { transform: translate(-30px, 20px) rotateY(18deg) rotateX(4deg) rotateZ(-4deg); z-index: 1; }
 .phones-stage .p-center { transform: translate(0, -20px) rotateY(-4deg) rotateX(2deg); z-index: 3; }
 .phones-stage .p-right  { transform: translate(140px, 40px) rotateY(-18deg) rotateX(4deg) rotateZ(4deg); z-index: 2; }
+@media (min-width: 960px) and (max-width: 1199px) {
+  .phones-stage .p-left { display: none; }
+}
 
 /* accent glow under phones */
 .phones-stage::before {

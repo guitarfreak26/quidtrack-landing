@@ -39,7 +39,7 @@ const Hero = ({ headline }) => (
   <section className="hero">
     <div className="wrap">
       <div className="hero-grid">
-        <div>
+        <div className="hero-copy">
           <span className="hero-eyebrow"><span className="dot"/> Free to download · Pro £4.99 launch</span>
           <h1 dangerouslySetInnerHTML={{__html: headline}}/>
           <p className="sub">Pay once, track every quid. Start free with 5 subscriptions, then unlock Pro forever when you need the whole lot.</p>
