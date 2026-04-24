@@ -77,7 +77,7 @@ const WhySection = () => (
           <div className="icon-box"><Icon name="uk" size={22}/></div>
           <h3>UK-first catalogue</h3>
           <p>150+ UK services detected out of the box — Netflix, Sky, Octopus, BT, TV Licence, plus energy, broadband, and creditors you actually owe.</p>
-          <div className="tag"><Icon name="check" size={14}/> Works offline</div>
+          <div className="tag"><Icon name="check" size={14}/> Core tracking works offline</div>
         </div>
         <div className="card-lg">
           <div className="icon-box"><Icon name="lock" size={22}/></div>
@@ -114,7 +114,7 @@ const PricingIrony = () => (
         <div className="divider"/>
         <div className="feats">
           <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited subscriptions tracked</div>
-          <div><span className="ico"><Icon name="check" size={16}/></span>Cross-device sync (iCloud + Drive)</div>
+          <div><span className="ico"><Icon name="check" size={16}/></span>Google Drive sync</div>
           <div><span className="ico"><Icon name="check" size={16}/></span>Home-screen widgets</div>
           <div><span className="ico"><Icon name="check" size={16}/></span>All future updates, forever</div>
         </div>
@@ -126,7 +126,7 @@ const PricingIrony = () => (
 
 const FEATURES = [
   { ic:'infinity',  t:'Unlimited subs',     d:'Track as many as you like. No artificial cap at 5, no paywall at 10.' },
-  { ic:'sync',      t:'Cross-device sync',  d:'iCloud or Google Drive. Your data, your cloud. End-to-end encrypted.' },
+  { ic:'sync',      t:'Google Drive sync',  d:'Stored on your Google Drive, never on our servers. iCloud sync will arrive when iOS lands.' },
   { ic:'grid',      t:'Home-screen widgets',d:'Small, medium, large. See what you owe without unlocking the app.' },
   { ic:'calendar',  t:'Calendar view',      d:'See every charge on a month grid. Spot the weeks that quietly bleed you.' },
   { ic:'bell',      t:'Day-before reminders', d:'A push notification the night before, in case you\'d rather cancel than pay.' },
