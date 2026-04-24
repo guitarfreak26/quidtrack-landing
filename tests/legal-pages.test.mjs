@@ -14,6 +14,8 @@ test('legal markdown content is stored in the landing app', () => {
   assert.match(terms, /^# QuidTrack Terms of Service/m);
   assert.match(privacy, /ALARA Studios \(Alan Newton, sole trader, Birmingham, UK\)/);
   assert.match(terms, /guitarfreak2689@gmail\.com/);
+  assert.doesNotMatch(terms, /\.\/quidtrack-privacy-policy\.md/);
+  assert.match(terms, /\[Privacy Policy\]\(\/privacy\)/);
 });
 
 test('privacy and terms pages render markdown with noindex metadata', () => {

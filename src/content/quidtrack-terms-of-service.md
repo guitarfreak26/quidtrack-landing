@@ -70,7 +70,7 @@ We make reasonable efforts to keep cancellation URLs accurate, but service provi
 
 ## 6. Your data
 
-We handle your data per our [Privacy Policy](./quidtrack-privacy-policy.md). The short version:
+We handle your data per our [Privacy Policy](/privacy). The short version:
 
 - We do not store your subscription data on our servers — it lives on your device.
 - We do not read your bank statements. CSV imports are parsed locally.
