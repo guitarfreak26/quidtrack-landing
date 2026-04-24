@@ -40,9 +40,9 @@ const Hero = ({ headline }) => (
     <div className="wrap">
       <div className="hero-grid">
         <div>
-          <span className="hero-eyebrow"><span className="dot"/> UK launch · £4.99 first 1,000</span>
+          <span className="hero-eyebrow"><span className="dot"/> Free to download · Pro £4.99 launch</span>
           <h1 dangerouslySetInnerHTML={{__html: headline}}/>
-          <p className="sub">The UK subscription tracker built for people tired of paying monthly fees to track monthly fees.</p>
+          <p className="sub">Pay once, track every quid. Start free with 5 subscriptions, then unlock Pro forever when you need the whole lot.</p>
           <div className="hero-ctas">
             <PlayBadge/>
             <a className="btn-secondary" href="#ios">
@@ -51,8 +51,8 @@ const Hero = ({ headline }) => (
             </a>
           </div>
           <div className="hero-meta">
-            <div className="stat"><div className="n">150+</div><div className="l">UK services in catalogue</div></div>
-            <div className="stat"><div className="n">£4.99</div><div className="l">One-time · not a subscription</div></div>
+            <div className="stat"><div className="n">Free</div><div className="l">Track 5 subscriptions</div></div>
+            <div className="stat"><div className="n">£4.99</div><div className="l">Pro launch unlock</div></div>
             <div className="stat"><div className="n">0</div><div className="l">Bank logins required</div></div>
           </div>
         </div>
@@ -82,14 +82,14 @@ const WhySection = () => (
         <div className="card-lg">
           <div className="icon-box"><Icon name="lock" size={22}/></div>
           <h3>No Open Banking login</h3>
-          <p>Export a CSV from your bank, drop it in QuidTrack. The file stays on your phone. We never see your statements — and neither does a third party.</p>
-          <div className="tag"><Icon name="shield" size={14}/> On-device only</div>
+          <p>Add manually — no bank data required. If you upgrade to Pro, CSV and Emma imports are parsed on your phone. We never see your statements.</p>
+          <div className="tag"><Icon name="shield" size={14}/> Manual entry is free</div>
         </div>
         <div className="card-lg">
           <div className="icon-box"><Icon name="wallet" size={22}/></div>
-          <h3>One price, forever</h3>
-          <p>£4.99 for the first 1,000 customers, then £6.99. That's it. No trial, no tier, no surprise renewal in six months.</p>
-          <div className="tag"><Icon name="infinity" size={14}/> Includes every future update</div>
+          <h3>Free first, Pro forever</h3>
+          <p>Download free and track up to 5 subscriptions. Pro is £4.99 for the first 1,000, then £14.99 — one payment, no renewal.</p>
+          <div className="tag"><Icon name="infinity" size={14}/> Pro includes future updates</div>
         </div>
       </div>
     </div>
@@ -103,34 +103,51 @@ const PricingIrony = () => (
         No subscriptions.<br/>
         <span className="x">Ever.</span>
       </h2>
-      <p className="irony">Yes, we see the irony. A subscription tracker that refuses to be a subscription. <em>It's called principle.</em></p>
-      <div className="pricing-card">
-        <div className="ribbon"><Icon name="sparkle" size={11} stroke={2}/> LAUNCH · FIRST 1,000</div>
-        <div className="row2">
-          <div className="price">£4.99</div>
-          <div className="strike">£6.99</div>
+      <p className="irony">Yes, we see the irony. Free to start, no subscription to unlock. <em>Pay once, track every quid.</em></p>
+      <div className="plan-compare" aria-label="Free vs Pro comparison">
+        <div className="plan-card free-plan">
+          <div className="ribbon muted">FREE</div>
+          <h3>Free</h3>
+          <p className="plan-price">£0</p>
+          <div className="lede">Start without paying, signing up, or handing over bank data.</div>
+          <div className="divider"/>
+          <div className="feats">
+            <div><span className="ico"><Icon name="check" size={16}/></span>Track up to 5 subscriptions</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>Manual entry</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>UK catalogue + cancellation links</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>local-only storage</div>
+          </div>
         </div>
-        <div className="lede">One-time. Not a trial. Not a renewal. Pay once, own it on every device you ever buy.</div>
-        <div className="divider"/>
-        <div className="feats">
-          <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited subscriptions tracked</div>
-          <div><span className="ico"><Icon name="check" size={16}/></span>Google Drive sync</div>
-          <div><span className="ico"><Icon name="check" size={16}/></span>Home-screen widgets</div>
-          <div><span className="ico"><Icon name="check" size={16}/></span>All future updates, forever</div>
+        <div className="plan-card pro-plan">
+          <div className="ribbon"><Icon name="sparkle" size={11} stroke={2}/> PRO · FIRST 1,000</div>
+          <h3>Pro (£4.99 launch)</h3>
+          <div className="row2">
+            <div className="price">£4.99</div>
+            <div className="strike">£14.99 after first 1,000</div>
+          </div>
+          <div className="lede">One-time. Not a trial. Not a renewal. Unlock forever on your Android devices.</div>
+          <div className="divider"/>
+          <div className="feats">
+            <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited subscriptions</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>CSV + Emma imports</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>Home-screen widgets</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>Cross-device sync</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>All future updates</div>
+          </div>
+          <div style={{marginTop:24}}><PlayBadge style={{width:'100%'}}/></div>
         </div>
-        <div style={{marginTop:24}}><PlayBadge style={{width:'100%'}}/></div>
       </div>
     </div>
   </section>
 );
 
 const FEATURES = [
-  { ic:'infinity',  t:'Unlimited subs',     d:'Track as many as you like. No artificial cap at 5, no paywall at 10.' },
-  { ic:'sync',      t:'Google Drive sync',  d:'Stored on your Google Drive, never on our servers. iCloud sync will arrive when iOS lands.' },
-  { ic:'grid',      t:'Home-screen widgets',d:'Small, medium, large. See what you owe without unlocking the app.' },
+  { ic:'infinity',  t:'Free manual tracking', d:'Add manually — no bank data required. Free users can track up to 5 subscriptions locally.' },
+  { ic:'sync',      t:'Google Drive sync',  d:'Pro sync is stored on your Google Drive, never on our servers. iCloud sync will arrive when iOS lands.' },
+  { ic:'grid',      t:'Home-screen widgets',d:'Pro widgets show what you owe without unlocking the app.' },
   { ic:'calendar',  t:'Calendar view',      d:'See every charge on a month grid. Spot the weeks that quietly bleed you.' },
   { ic:'bell',      t:'Day-before reminders', d:'A push notification the night before, in case you\'d rather cancel than pay.' },
-  { ic:'upload',    t:'CSV import',         d:'Drop your bank statement in. We find the recurring charges. Nothing leaves your phone.' },
+  { ic:'upload',    t:'CSV + Emma import',  d:'Pro imports are parsed on your phone. Nothing leaves your device unless you choose sync.' },
 ];
 
 const FeaturesSection = () => (
@@ -162,9 +179,9 @@ const Migration = () => (
             <h2>
               Paying Emma <span className="strike-big">£9.99/mo</span> to tell you<br/>
               you pay too much for things?<br/>
-              <span className="hi">Import once. £4.99. Done.</span>
+              <span className="hi">Manual is free. Pro imports once. £4.99.</span>
             </h2>
-            <p className="lede">Export from Emma or Snoop, drop the CSV into QuidTrack, and keep the £115 a year. We won't judge — well, maybe a bit.</p>
+            <p className="lede">Start free with manual entry. Upgrade to Pro when you want CSV or Emma import, and keep the £115 a year. We won't judge — well, maybe a bit.</p>
             <PlayBadge/>
           </div>
           <div className="compare">
@@ -177,8 +194,8 @@ const Migration = () => (
             <div className="cell us">
               <div className="n-sm">QuidTrack</div>
               <div className="p-big">£4.99</div>
-              <div className="p-cadence">Once. That's the whole thing.</div>
-              <div className="per-yr">£4.99 total, ever</div>
+              <div className="p-cadence">Free to start. Pro once.</div>
+              <div className="per-yr">£4.99 launch unlock</div>
             </div>
           </div>
         </div>
@@ -240,10 +257,10 @@ const IOSSignup = () => {
 };
 
 const FAQ_DATA = [
-  { q: 'Is it really one-time? No "Pro" tier later?',
-    a: '<strong>Really.</strong> £4.99 for the first 1,000, £6.99 after. We\'re not holding back a premium tier to upsell you in six months. The whole app is the app.' },
+  { q: 'Is Pro really one-time?',
+    a: '<strong>Really.</strong> QuidTrack is free to download. Pro is £4.99 for the first 1,000, £14.99 after, and it is not a subscription. Pay once, unlock Pro forever.' },
   { q: 'Do you see my bank data?',
-    a: 'No. There\'s no Open Banking integration. You export a CSV from your bank and import it locally. The file is parsed on your phone and never leaves it. We\'re not a data business — we\'re a £4.99 app.' },
+    a: 'No. There\'s no Open Banking integration. Manual entry needs no bank data at all, and Pro imports are parsed locally on your phone. We\'re not a data business — we\'re a freemium app with a one-time Pro unlock.' },
   { q: 'Which UK banks work with CSV import?',
     a: 'Monzo, Starling, Revolut, HSBC, Barclays, Lloyds, NatWest, Santander, Nationwide, First Direct, TSB, Metro, Chase UK, and a few more. If your bank exports a statement, we\'ll handle it.' },
   { q: 'Does it actually cancel subscriptions for me?',
@@ -303,9 +320,9 @@ const Footer = () => (
         </div>
         <div className="footer-col">
           <h5>Get in touch</h5>
-          <a href="mailto:guitarfreak2689@gmail.com">guitarfreak2689@gmail.com</a>
-          <a>Press kit</a>
-          <a>Roadmap</a>
+          <a href="mailto:hello@quidtrack.app">General: hello@quidtrack.app</a>
+          <a href="mailto:support@quidtrack.app">Support: support@quidtrack.app</a>
+          <a href="mailto:privacy@quidtrack.app">Privacy: privacy@quidtrack.app</a>
         </div>
       </div>
       <div className="footer-bottom">

@@ -4,34 +4,33 @@ import { join } from 'node:path';
 import { test } from 'node:test';
 
 const root = process.cwd();
+const sourceRoot = '/Users/alannewton/clawd/fanvue-automation';
 const read = (path) => readFileSync(join(root, path), 'utf8');
+const readSource = (filename) => readFileSync(join(sourceRoot, filename), 'utf8');
 
-test('legal markdown content is synced to the current Ltd launch copy', () => {
+test('legal markdown content is synced byte-for-byte from the current source docs', () => {
+  const sourcePrivacy = readSource('quidtrack-privacy-policy.md');
+  const sourceTerms = readSource('quidtrack-terms-of-service.md');
   const privacy = read('src/content/quidtrack-privacy-policy.md');
   const terms = read('src/content/quidtrack-terms-of-service.md');
   const combined = `${privacy}\n${terms}`;
 
-  assert.match(privacy, /^# QuidTrack Privacy Policy/m);
-  assert.match(terms, /^# QuidTrack Terms of Service/m);
-  assert.match(
-    privacy,
-    /ALARA Studios Ltd, a company registered in England and Wales \(Company Number 16985196\)/
-  );
-  assert.match(
-    terms,
-    /ALARA Studios Ltd[\s\S]*a company registered in England and Wales \(Company Number 16985196\)/
-  );
+  assert.equal(privacy, sourcePrivacy);
+  assert.equal(terms, sourceTerms);
+  assert.match(privacy, /QuidTrack is free to download — you can track up to 5 subscriptions/);
+  assert.match(privacy, /Data collected by Google Play \(only if you upgrade to Pro\)/);
+  assert.match(terms, /## 2\. What you get — Free and Pro/);
+  assert.match(terms, /### 2\.1 Free tier/);
+  assert.match(terms, /### 2\.2 QuidTrack Pro \(one-time upgrade\)/);
+  assert.match(terms, /### 2\.3 Pro launch pricing/);
+  assert.match(terms, /£14\.99 after the first 1,000 customers/);
   assert.match(combined, /\*\*Registered office:\*\* \[REGISTERED OFFICE — to be added before launch\]/);
-  assert.match(privacy, /\*\*Contact:\*\* privacy@quidtrack\.app/);
   assert.match(privacy, /\*\*General:\*\* hello@quidtrack\.app/);
+  assert.match(privacy, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);
   assert.match(privacy, /\*\*Privacy \/ UK GDPR requests:\*\* privacy@quidtrack\.app/);
   assert.match(terms, /\*\*General queries:\*\* hello@quidtrack\.app/);
   assert.match(terms, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);
   assert.match(terms, /\*\*Privacy \/ UK GDPR:\*\* privacy@quidtrack\.app/);
-  assert.match(
-    combined,
-    /QuidTrack is a product of ALARA Studios Ltd, a company registered in England and Wales \(Company Number 16985196\)\./
-  );
   assert.doesNotMatch(combined, /sole trader/i);
   assert.doesNotMatch(combined, /guitarfreak/i);
 });
@@ -52,12 +51,34 @@ test('privacy and terms pages render accordion markdown with noindex metadata', 
   assert.match(component, /aria-expanded/);
 });
 
-test('landing footer exposes legal and contact links', () => {
+test('homepage positions QuidTrack as freemium with manual entry trust copy', () => {
+  const runtime = read('src/app/LandingRuntime.tsx');
+  const landingAsset = read('public/assets/6ff52c36-9765-4a37-86d7-0dcdfbca5d1f.js');
+  const combined = `${runtime}\n${landingAsset}`;
+
+  assert.match(runtime, /Free to try\.<br\/>£4\.99 to/);
+  assert.match(runtime, /unlock forever\.<\/span>/);
+  assert.match(combined, /Pay once, track every quid/);
+  assert.match(combined, /Free vs Pro/);
+  assert.match(combined, /Track up to 5 subscriptions/);
+  assert.match(combined, /Manual entry/);
+  assert.match(combined, /local-only/);
+  assert.match(combined, /Pro \(£4\.99 launch/);
+  assert.match(combined, /£14\.99 after first 1,000/);
+  assert.match(combined, /CSV \+ Emma imports/);
+  assert.match(combined, /Add manually — no bank data required/);
+  assert.doesNotMatch(combined, /£6\.99/);
+});
+
+test('landing footer exposes legal links and QuidTrack alias emails', () => {
   const footerAsset = read('public/assets/6ff52c36-9765-4a37-86d7-0dcdfbca5d1f.js');
 
   assert.match(footerAsset, /href="\/privacy"/);
   assert.match(footerAsset, /href="\/terms"/);
-  assert.match(footerAsset, /mailto:guitarfreak2689@gmail\.com/);
+  assert.match(footerAsset, /mailto:hello@quidtrack\.app/);
+  assert.match(footerAsset, /mailto:support@quidtrack\.app/);
+  assert.match(footerAsset, /mailto:privacy@quidtrack\.app/);
+  assert.doesNotMatch(footerAsset, /guitarfreak2689@gmail\.com/);
 });
 
 test('homepage section spacing is tightened without changing the hero', () => {

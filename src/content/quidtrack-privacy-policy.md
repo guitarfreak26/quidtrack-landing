@@ -7,7 +7,9 @@
 
 QuidTrack is designed to keep your financial data **on your device**. We don't see your bank statements, your subscription list, or what you owe. We don't have servers that store your data. We can't sell what we can't see.
 
-The only things we do collect: your email if you join the iOS waitlist, and your purchase record (handled by Google Play, not us). That's it.
+QuidTrack is free to download — you can track up to 5 subscriptions without paying anything or creating an account with us. If you upgrade to QuidTrack Pro (£4.99 one-time launch price) to unlock unlimited subscriptions and extra features, Google Play handles the payment. We never see your card details.
+
+The only things we collect: your email if you join the iOS waitlist, and — if you upgrade to Pro — a purchase record handled by Google Play. That's it.
 
 If you want the full legal version, keep reading.
 
@@ -29,13 +31,13 @@ We are the "data controller" under UK GDPR for the limited data described below.
 
 - **Email address** — only if you voluntarily join the iOS launch waitlist on our website. Used solely to email you once when the iOS app is available, plus occasional critical updates (e.g. a security issue). You can unsubscribe at any time.
 
-### 2.2 Data collected by Google Play (not by us)
+### 2.2 Data collected by Google Play (only if you upgrade to Pro)
 
-- **Purchase record** — when you buy QuidTrack (£4.99 one-time), Google Play processes the payment and stores the purchase record against your Google account. We do not receive your card details, name, or address. We receive only an anonymised purchase confirmation so the app unlocks on your devices. Google's privacy policy governs this data: https://policies.google.com/privacy
+- **Purchase record** — QuidTrack is free to download with a 5-subscription free tier. If you choose to upgrade to QuidTrack Pro (£4.99 one-time at launch, £14.99 after the first 1,000 customers) to unlock unlimited tracking and extra features, Google Play processes the payment and stores the purchase record against your Google account. We do not receive your card details, name, or address. We receive only an anonymised purchase confirmation so Pro features unlock on your devices. If you stay on the free tier, no purchase record exists. Google's privacy policy governs this data: https://policies.google.com/privacy
 
 ### 2.3 Data we deliberately do NOT collect
 
-- Your bank statements or bank login credentials (the app parses CSVs on your device — we never see them)
+- Your bank statements or bank login credentials (if you import a CSV or use manual entry, that parsing happens on your device — we never see it)
 - Your list of subscriptions or what you owe (stored locally on your device)
 - Analytics, crash reports, or behavioural tracking
 - Your name, address, phone number, or date of birth
@@ -49,12 +51,12 @@ We are the "data controller" under UK GDPR for the limited data described below.
 ## 3. Legal basis for processing (UK GDPR Article 6)
 
 - **Email waitlist:** consent (Article 6(1)(a)). You opted in by submitting the form.
-- **Purchase fulfilment:** contract performance (Article 6(1)(b)). We need the purchase record to unlock the app you paid for.
+- **Pro purchase fulfilment:** contract performance (Article 6(1)(b)). If you upgrade to QuidTrack Pro, we need the purchase record to unlock the Pro features you paid for. Free-tier users are not subject to this processing.
 
 ## 4. How long we keep your data
 
 - **Waitlist email:** deleted within 30 days of the iOS launch email being sent, or immediately on your unsubscribe request — whichever comes first.
-- **Purchase record:** retained as long as Google Play retains it, per Google's policies. We have no separate copy.
+- **Purchase record (Pro upgraders only):** retained as long as Google Play retains it, per Google's policies. We have no separate copy.
 - **On-device data:** retained until you delete the app or clear the data. We cannot delete it for you — it's on your device.
 
 ## 5. Who we share your data with

@@ -5,7 +5,7 @@
 
 ## Plain English summary
 
-You pay £4.99 once and you get QuidTrack forever, on every Android device you own. You own what you buy. We don't take it back, we don't rent it to you, we don't paywall features you already paid for.
+QuidTrack is free to download. You can track up to 5 subscriptions without paying anything. If you want more — unlimited subscriptions, CSV and Emma imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£14.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
 
 In return, you agree to use the app for personal use, not to pirate or resell it, and you accept that software comes with normal "we can't promise perfection" caveats.
 
@@ -19,31 +19,53 @@ In return, you agree to use the app for personal use, not to pirate or resell it
 
 These terms form a contract between you (the user) and ALARA Studios Ltd.
 
-## 2. What you're buying
+## 2. What you get — Free and Pro
 
-QuidTrack is a UK-focused subscription tracking app for Android (with iOS coming later). You pay a **one-time price** via Google Play to unlock the full app. There is no subscription, no renewal, no surprise billing.
+QuidTrack is a UK-focused subscription tracking app for Android (with iOS coming later).
 
-### 2.1 Launch pricing
+### 2.1 Free tier
 
-- **First 1,000 customers:** £4.99 one-time
-- **After that:** £6.99 one-time
+When you download QuidTrack you get the free tier at no cost. The free tier lets you:
+
+- Track up to **5 subscriptions** (added manually or, if you later upgrade to Pro, via import).
+- Use our catalogue of UK services and cancellation links.
+- Keep all your data on your device — no account, no sign-up, no payment.
+
+The free tier is available indefinitely. We will not retroactively downgrade or remove it.
+
+### 2.2 QuidTrack Pro (one-time upgrade)
+
+If you want more than 5 subscriptions, or you want the extra Pro features, you can upgrade to **QuidTrack Pro** via Google Play. Pro unlocks:
+
+- **Unlimited subscriptions**
+- **CSV and Emma imports**
+- **Home-screen widgets**
+- **Cross-device sync** (Google Drive on Android, iCloud when iOS launches)
+- **All future Pro updates**
+
+### 2.3 Pro launch pricing
+
+- **First 1,000 Pro customers:** £4.99 one-time
+- **After that:** £14.99 one-time
 
 The price is displayed in Google Play at the moment of purchase. That's the price you pay. If you bought at £4.99 you are not retroactively charged when the price rises.
 
-### 2.2 What "one-time" means
+### 2.4 What "one-time" means for Pro
 
 - You pay once.
-- You own the app on your Google Play account.
-- You can install it on every Android device linked to that account.
-- You keep access to all future updates, at no additional cost, for as long as we continue to distribute the app.
-- We will never retroactively convert your purchase into a subscription.
+- Pro is attached to your Google Play account.
+- Pro unlocks on every Android device linked to that account.
+- You keep access to all future Pro updates, at no additional cost, for as long as we continue to distribute the app.
+- We will never retroactively convert your Pro purchase into a subscription or paywall features you already unlocked.
 
 ## 3. Refunds
 
-Refunds are handled by **Google Play**, not by us directly, under their standard refund policy:
+Refunds only apply to QuidTrack Pro purchases. The free tier has nothing to refund.
+
+Pro refunds are handled by **Google Play**, not by us directly, under their standard refund policy:
 https://support.google.com/googleplay/answer/2479637
 
-Typically Google allows refunds within 48 hours of purchase with no questions asked. Beyond that, contact us at support@quidtrack.app and we will consider requests on a case-by-case basis where there is a legitimate issue (e.g. the app does not work on your device).
+Typically Google allows refunds within 48 hours of purchase with no questions asked. Beyond that, contact us at support@quidtrack.app and we will consider requests on a case-by-case basis where there is a legitimate issue (e.g. Pro features do not work on your device).
 
 Under the UK Consumer Rights Act 2015, you also have statutory rights if the app is not of satisfactory quality, not fit for purpose, or not as described.
 
@@ -51,16 +73,17 @@ Under the UK Consumer Rights Act 2015, you also have statutory rights if the app
 
 You may:
 
-- Use the app for personal subscription tracking.
-- Install it on any device linked to the Google Play account that purchased it.
-- Sync your data via your own Google Drive account on Android, with iCloud sync planned when iOS launches.
+- Use the app for personal subscription tracking on the free tier (up to 5 subscriptions) or Pro (unlimited).
+- Install QuidTrack on any Android device. If you've upgraded to Pro, Pro features unlock on every device linked to the Google Play account that purchased Pro.
+- Add subscriptions manually, or — on Pro — import them via CSV or Emma.
+- Sync your data via your own Google Drive account on Android (Pro feature), with iCloud sync planned when iOS launches.
 
 You may not:
 
 - Reverse engineer, decompile, or attempt to extract our source code.
 - Resell, sublicense, or redistribute the app or any part of it.
 - Use the app for any unlawful purpose.
-- Attempt to circumvent Google Play licensing to share your purchase with users who have not paid.
+- Attempt to circumvent Google Play licensing to share Pro with users who have not paid for it.
 
 ## 5. What the app does and does not do
 
@@ -73,8 +96,8 @@ We make reasonable efforts to keep cancellation URLs accurate, but service provi
 We handle your data per our [Privacy Policy](/privacy). The short version:
 
 - We do not store your subscription data on our servers — it lives on your device.
-- We do not read your bank statements. CSV imports are parsed locally.
-- Optional cloud sync uses **your own** Google Drive on Android, with iCloud planned when iOS launches. We never see it.
+- We do not read your bank statements. CSV and Emma imports (Pro) are parsed locally. Manual entry (available on free and Pro) never leaves your device.
+- Optional cloud sync (Pro) uses **your own** Google Drive on Android, with iCloud planned when iOS launches. We never see it.
 
 ## 7. No financial advice
 
@@ -82,8 +105,8 @@ QuidTrack shows you what you're spending. It is **not** a regulated financial pr
 
 ## 8. Availability and changes
 
-- We aim to keep the app working reliably but cannot guarantee 100% uptime of cloud-dependent features (waitlist, catalogue updates).
-- We may add features, change features, or retire features. We will not remove core functionality you paid for (unlimited tracking, one-time pricing).
+- We aim to keep the app working reliably but cannot guarantee 100% uptime of cloud-dependent features (waitlist, catalogue updates, Pro sync).
+- We may add features, change features, or retire features. We will not remove core Pro functionality you paid for (unlimited tracking, CSV/Emma imports, widgets, cross-device sync, one-time pricing).
 - We may update the catalogue of UK services at any time.
 
 ## 9. Limitation of liability
@@ -91,7 +114,7 @@ QuidTrack shows you what you're spending. It is **not** a regulated financial pr
 QuidTrack is provided "as is". To the maximum extent permitted by UK law:
 
 - We are not liable for any indirect, incidental, or consequential losses arising from your use of the app (e.g. missed cancellation deadlines, reliance on out-of-date catalogue data).
-- Our total liability for any claim arising from your use of QuidTrack is limited to the amount you paid for the app (£4.99 or £6.99).
+- Our total liability for any claim arising from your use of QuidTrack is limited to the amount you paid for QuidTrack Pro (£4.99 or £14.99). If you are a free-tier user who has not paid for Pro, our total liability is limited to £5.
 
 Nothing in these terms limits our liability for: (a) death or personal injury caused by negligence, (b) fraud, or (c) any liability that cannot be excluded under UK law. Your statutory rights as a consumer under UK law are not affected.
 
@@ -107,7 +130,7 @@ These terms are governed by the laws of **England and Wales**. Any dispute will 
 
 ## 12. Changes to these terms
 
-If we make material changes, we'll update the "Last updated" date. For existing customers we will not make retrospective changes that take away rights you've already paid for (e.g. your one-time purchase will always remain one-time).
+If we make material changes, we'll update the "Last updated" date. For existing Pro customers we will not make retrospective changes that take away rights you've already paid for (e.g. your one-time Pro purchase will always remain one-time, and unlocked Pro features stay unlocked).
 
 ## 13. Contact
 
