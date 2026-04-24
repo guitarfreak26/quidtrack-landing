@@ -13,7 +13,9 @@ test('legal markdown content reflects current QuidTrack positioning and pricing'
 
   assert.match(privacy, /QuidTrack is free to download — you can track up to 5 recurring outgoings/);
   assert.match(privacy, /Data collected by Google Play \(only if you upgrade to Pro\)/);
+  assert.match(privacy, /Bank, PayPal, Emma, and Snoop CSV import data/);
   assert.match(privacy, /CSV files are parsed locally on your device/);
+  assert.match(privacy, /PayPal Automatic Payments exports/);
   assert.match(privacy, /\*\*Raw CSV data:\*\* discarded immediately after local parsing/);
   assert.match(privacy, /RevenueCat/);
   assert.match(privacy, /Firebase \(Google Cloud\)/);
@@ -68,7 +70,8 @@ test('homepage positions QuidTrack as freemium with manual entry trust copy', ()
   assert.match(combined, /local-only/);
   assert.match(combined, /Pro \(£4\.99 launch/);
   assert.match(combined, /£9\.99 after first 1,000/);
-  assert.match(combined, /CSV \+ Emma imports/);
+  assert.match(combined, /PayPal \+ CSV import/);
+  assert.match(combined, /CSV, PayPal \+ Emma imports/);
   assert.match(combined, /Add manually — no bank data required/);
   assert.doesNotMatch(combined, /£6\.99/);
 });

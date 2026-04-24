@@ -18,6 +18,7 @@ const OUTGOING_CHIPS = [
   'Mortgage',
   'Rent',
   'Council Tax',
+  'PayPal Auto-Pay',
   'Car Finance',
   'Home Insurance',
   'Energy',
@@ -55,7 +56,7 @@ const Hero = ({ headline }) => (
         <div className="hero-copy">
           <span className="hero-eyebrow"><span className="dot"/> Free to download · Pro £4.99 launch</span>
           <h1 dangerouslySetInnerHTML={{__html: headline}}/>
-          <p className="sub">Not just Netflix and Spotify. Track subscriptions and real UK bills — mortgage, rent, council tax, car finance, energy, broadband, insurance, all in one place.</p>
+          <p className="sub">Not just Netflix and Spotify. Track subscriptions, hidden PayPal recurring payments, and real UK bills — mortgage, rent, council tax, car finance, energy, broadband, insurance, all in one place.</p>
           <div className="outgoing-strip" aria-label="Example outgoings QuidTrack can track">
             {OUTGOING_CHIPS.map((item) => <span key={item}>{item}</span>)}
           </div>
@@ -92,13 +93,13 @@ const WhySection = () => (
         <div className="card-lg">
           <div className="icon-box"><Icon name="uk" size={22}/></div>
           <h3>UK-first outgoings</h3>
-          <p>150+ UK services and household obligations — Netflix, Sky, Octopus, BT, TV Licence, council tax, broadband, mortgage, rent, car finance, and more.</p>
+          <p>150+ UK services and household obligations — Netflix, Sky, Octopus, BT, PayPal Automatic Payments, TV Licence, council tax, broadband, mortgage, rent, car finance, and more.</p>
           <div className="tag"><Icon name="check" size={14}/> Core tracking works offline</div>
         </div>
         <div className="card-lg">
           <div className="icon-box"><Icon name="lock" size={22}/></div>
           <h3>No Open Banking login</h3>
-          <p>Add manually — no bank data required. If you upgrade to Pro, CSV and Emma imports are parsed on your phone. We never see your statements.</p>
+          <p>Add manually — no bank data required. If you upgrade to Pro, bank CSV, PayPal, Emma, and Snoop imports are parsed on your phone. We never see your statements.</p>
           <div className="tag"><Icon name="shield" size={14}/> Manual entry is free</div>
         </div>
         <div className="card-lg">
@@ -145,7 +146,7 @@ const PricingIrony = () => (
           <div className="divider"/>
           <div className="feats">
             <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited bills and subscriptions</div>
-            <div><span className="ico"><Icon name="check" size={16}/></span>CSV + Emma imports</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>CSV, PayPal + Emma imports</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Home-screen widgets</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Cross-device sync</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>All future updates</div>
@@ -163,7 +164,7 @@ const FEATURES = [
   { ic:'grid',      t:'Home-screen widgets',d:'Pro widgets show what you owe without unlocking the app.' },
   { ic:'calendar',  t:'Calendar view',      d:'See every charge on a month grid. Spot the weeks that quietly bleed you.' },
   { ic:'bell',      t:'Day-before reminders', d:'A push notification the night before, in case you\'d rather cancel than pay.' },
-  { ic:'upload',    t:'CSV + Emma import',  d:'Pro imports are parsed on your phone. Nothing leaves your device unless you choose sync.' },
+  { ic:'upload',    t:'PayPal + CSV import',  d:'Find PayPal Automatic Payments and recurring bank CSV charges locally. Nothing leaves your device unless you choose sync.' },
 ];
 
 const FeaturesSection = () => (

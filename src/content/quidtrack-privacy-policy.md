@@ -5,7 +5,7 @@
 
 ## Plain English summary
 
-QuidTrack is designed to keep your most sensitive financial data **on your device**. CSV imports are parsed locally. We never receive your bank statements, account number, balance, or full transaction history.
+QuidTrack is designed to keep your most sensitive financial data **on your device**. Bank, PayPal, Emma, and Snoop CSV imports are parsed locally. We never receive your bank statements, PayPal export files, account number, balance, or full transaction history.
 
 QuidTrack is free to download — you can track up to 5 recurring outgoings without paying anything or creating an account with us. If you upgrade to QuidTrack Pro (£4.99 one-time launch price) to unlock unlimited bills, subscriptions, and extra features, Google Play handles the payment. We never see your card details.
 
@@ -35,9 +35,9 @@ We are the "data controller" under UK GDPR for the limited data described below.
 
 - **Purchase record** — QuidTrack is free to download with a 5-outgoing free tier. If you choose to upgrade to QuidTrack Pro (£4.99 one-time at launch, £9.99 after the first 1,000 customers) to unlock unlimited tracking and extra features, Google Play processes the payment and stores the purchase record against your Google account. We do not receive your card details, name, or address. We receive only an anonymised purchase confirmation so Pro features unlock on your devices. If you stay on the free tier, no purchase record exists. Google's privacy policy governs this data: https://policies.google.com/privacy
 
-### 2.3 Bank CSV import data
+### 2.3 Bank, PayPal, Emma, and Snoop CSV import data
 
-- **CSV files are parsed locally on your device.** We never receive, upload, store, or process your bank statements on our servers.
+- **CSV files are parsed locally on your device.** We never receive, upload, store, or process your bank statements, PayPal Automatic Payments exports, Emma exports, or Snoop exports on our servers.
 - **Account numbers, balances, and full transaction histories never leave your phone.**
 - QuidTrack extracts recurring payment candidates locally, shows them for review, and immediately discards the raw CSV content after parsing.
 - If you choose to add a detected recurring outgoing, only the structured item you selected is saved (name, amount, billing cycle, next payment date, category, notes, and optional links).
@@ -60,7 +60,7 @@ We are the "data controller" under UK GDPR for the limited data described below.
 
 - **Email waitlist:** consent (Article 6(1)(a)). You opted in by submitting the form.
 - **Pro purchase fulfilment:** contract performance (Article 6(1)(b)). If you upgrade to QuidTrack Pro, we need the purchase record to unlock the Pro features you paid for. Free-tier users are not subject to this processing.
-- **Local CSV import:** contract performance (Article 6(1)(b)). CSV parsing is needed to provide the import feature you requested, and happens locally on your device.
+- **Local CSV import:** contract performance (Article 6(1)(b)). Bank, PayPal, Emma, and Snoop CSV parsing is needed to provide the import feature you requested, and happens locally on your device.
 - **Optional sync:** contract performance (Article 6(1)(b)). If you enable sync, we store your chosen QuidTrack data so it can appear on your devices.
 
 ## 4. How long we keep your data
