@@ -40,7 +40,7 @@ If you want more than 5 recurring outgoings, or you want the extra Pro features,
 - **Unlimited bills and subscriptions**
 - **CSV and Emma imports**
 - **Home-screen widgets**
-- **Cross-device sync** (Google Drive on Android, iCloud when iOS launches)
+- **Cross-device sync** (Firebase-backed sync on Android, iCloud options when iOS launches)
 - **All future Pro updates**
 
 ### 2.3 Pro launch pricing
@@ -76,7 +76,7 @@ You may:
 - Use the app for personal recurring outgoing tracking on the free tier (up to 5 outgoings) or Pro (unlimited).
 - Install QuidTrack on any Android device. If you've upgraded to Pro, Pro features unlock on every device linked to the Google Play account that purchased Pro.
 - Add recurring outgoings manually, or — on Pro — import them via CSV or Emma.
-- Sync your data via your own Google Drive account on Android (Pro feature), with iCloud sync planned when iOS launches.
+- Sync your saved QuidTrack data across devices if you enable sync (Pro feature).
 
 You may not:
 
@@ -95,9 +95,9 @@ We make reasonable efforts to keep cancellation URLs accurate, but service provi
 
 We handle your data per our [Privacy Policy](/privacy). The short version:
 
-- We do not store your outgoings data on our servers — it lives on your device.
-- We do not read your bank statements. CSV and Emma imports (Pro) are parsed locally. Manual entry (available on free and Pro) never leaves your device.
-- Optional cloud sync (Pro) uses **your own** Google Drive on Android, with iCloud planned when iOS launches. We never see it.
+- By default your outgoings data lives on your device. If you enable sync, only the structured QuidTrack items you choose to save are stored in your user-scoped cloud account.
+- We do not read your bank statements. CSV and Emma imports (Pro) are parsed locally. Raw CSV files, balances, account numbers, and full transaction histories never leave your device.
+- Optional cloud sync (Pro) stores only the QuidTrack items you choose to save, under your user account. Source CSV data is never synced.
 
 ## 7. No financial advice
 

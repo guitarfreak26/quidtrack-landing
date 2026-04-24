@@ -13,6 +13,11 @@ test('legal markdown content reflects current QuidTrack positioning and pricing'
 
   assert.match(privacy, /QuidTrack is free to download — you can track up to 5 recurring outgoings/);
   assert.match(privacy, /Data collected by Google Play \(only if you upgrade to Pro\)/);
+  assert.match(privacy, /CSV files are parsed locally on your device/);
+  assert.match(privacy, /\*\*Raw CSV data:\*\* discarded immediately after local parsing/);
+  assert.match(privacy, /RevenueCat/);
+  assert.match(privacy, /Firebase \(Google Cloud\)/);
+  assert.match(privacy, /QuidTrack is a tracking tool, not financial advice/);
   assert.match(terms, /## 2\. What you get — Free and Pro/);
   assert.match(terms, /### 2\.1 Free tier/);
   assert.match(terms, /### 2\.2 QuidTrack Pro \(one-time upgrade\)/);
@@ -20,6 +25,7 @@ test('legal markdown content reflects current QuidTrack positioning and pricing'
   assert.match(terms, /£9\.99 after the first 1,000 customers/);
   assert.match(terms, /UK-focused recurring outgoings tracker/);
   assert.match(terms, /rent, mortgage, council tax, car finance, energy, broadband, insurance/);
+  assert.match(terms, /Raw CSV files, balances, account numbers, and full transaction histories never leave your device/);
   assert.match(combined, /\*\*Registered office:\*\* \[REGISTERED OFFICE — to be added before launch\]/);
   assert.match(privacy, /\*\*General:\*\* hello@quidtrack\.app/);
   assert.match(privacy, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);

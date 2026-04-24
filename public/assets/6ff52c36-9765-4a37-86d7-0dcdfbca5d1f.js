@@ -159,7 +159,7 @@ const PricingIrony = () => (
 
 const FEATURES = [
   { ic:'infinity',  t:'Free manual tracking', d:'Add manually — no bank data required. Free users can track up to 5 recurring outgoings locally.' },
-  { ic:'sync',      t:'Google Drive sync',  d:'Pro sync is stored on your Google Drive, never on our servers. iCloud sync will arrive when iOS lands.' },
+  { ic:'sync',      t:'Private sync',  d:'Pro sync stores only the QuidTrack items you save. Raw CSV data, balances, and full statements never leave your phone.' },
   { ic:'grid',      t:'Home-screen widgets',d:'Pro widgets show what you owe without unlocking the app.' },
   { ic:'calendar',  t:'Calendar view',      d:'See every charge on a month grid. Spot the weeks that quietly bleed you.' },
   { ic:'bell',      t:'Day-before reminders', d:'A push notification the night before, in case you\'d rather cancel than pay.' },
