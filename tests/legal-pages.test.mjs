@@ -23,7 +23,7 @@ test('legal markdown content is synced byte-for-byte from the current source doc
   assert.match(terms, /### 2\.1 Free tier/);
   assert.match(terms, /### 2\.2 QuidTrack Pro \(one-time upgrade\)/);
   assert.match(terms, /### 2\.3 Pro launch pricing/);
-  assert.match(terms, /£14\.99 after the first 1,000 customers/);
+  assert.match(terms, /£9\.99 after the first 1,000 customers/);
   assert.match(combined, /\*\*Registered office:\*\* \[REGISTERED OFFICE — to be added before launch\]/);
   assert.match(privacy, /\*\*General:\*\* hello@quidtrack\.app/);
   assert.match(privacy, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);
@@ -64,7 +64,7 @@ test('homepage positions QuidTrack as freemium with manual entry trust copy', ()
   assert.match(combined, /Manual entry/);
   assert.match(combined, /local-only/);
   assert.match(combined, /Pro \(£4\.99 launch/);
-  assert.match(combined, /£14\.99 after first 1,000/);
+  assert.match(combined, /£9\.99 after first 1,000/);
   assert.match(combined, /CSV \+ Emma imports/);
   assert.match(combined, /Add manually — no bank data required/);
   assert.doesNotMatch(combined, /£6\.99/);

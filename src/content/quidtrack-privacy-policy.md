@@ -33,7 +33,7 @@ We are the "data controller" under UK GDPR for the limited data described below.
 
 ### 2.2 Data collected by Google Play (only if you upgrade to Pro)
 
-- **Purchase record** — QuidTrack is free to download with a 5-subscription free tier. If you choose to upgrade to QuidTrack Pro (£4.99 one-time at launch, £14.99 after the first 1,000 customers) to unlock unlimited tracking and extra features, Google Play processes the payment and stores the purchase record against your Google account. We do not receive your card details, name, or address. We receive only an anonymised purchase confirmation so Pro features unlock on your devices. If you stay on the free tier, no purchase record exists. Google's privacy policy governs this data: https://policies.google.com/privacy
+- **Purchase record** — QuidTrack is free to download with a 5-subscription free tier. If you choose to upgrade to QuidTrack Pro (£4.99 one-time at launch, £9.99 after the first 1,000 customers) to unlock unlimited tracking and extra features, Google Play processes the payment and stores the purchase record against your Google account. We do not receive your card details, name, or address. We receive only an anonymised purchase confirmation so Pro features unlock on your devices. If you stay on the free tier, no purchase record exists. Google's privacy policy governs this data: https://policies.google.com/privacy
 
 ### 2.3 Data we deliberately do NOT collect
 

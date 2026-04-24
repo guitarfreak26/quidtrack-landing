@@ -5,7 +5,7 @@
 
 ## Plain English summary
 
-QuidTrack is free to download. You can track up to 5 subscriptions without paying anything. If you want more — unlimited subscriptions, CSV and Emma imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£14.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
+QuidTrack is free to download. You can track up to 5 subscriptions without paying anything. If you want more — unlimited subscriptions, CSV and Emma imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£9.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
 
 In return, you agree to use the app for personal use, not to pirate or resell it, and you accept that software comes with normal "we can't promise perfection" caveats.
 
@@ -46,7 +46,7 @@ If you want more than 5 subscriptions, or you want the extra Pro features, you c
 ### 2.3 Pro launch pricing
 
 - **First 1,000 Pro customers:** £4.99 one-time
-- **After that:** £14.99 one-time
+- **After that:** £9.99 one-time
 
 The price is displayed in Google Play at the moment of purchase. That's the price you pay. If you bought at £4.99 you are not retroactively charged when the price rises.
 
@@ -114,7 +114,7 @@ QuidTrack shows you what you're spending. It is **not** a regulated financial pr
 QuidTrack is provided "as is". To the maximum extent permitted by UK law:
 
 - We are not liable for any indirect, incidental, or consequential losses arising from your use of the app (e.g. missed cancellation deadlines, reliance on out-of-date catalogue data).
-- Our total liability for any claim arising from your use of QuidTrack is limited to the amount you paid for QuidTrack Pro (£4.99 or £14.99). If you are a free-tier user who has not paid for Pro, our total liability is limited to £5.
+- Our total liability for any claim arising from your use of QuidTrack is limited to the amount you paid for QuidTrack Pro (£4.99 or £9.99). If you are a free-tier user who has not paid for Pro, our total liability is limited to £5.
 
 Nothing in these terms limits our liability for: (a) death or personal injury caused by negligence, (b) fraud, or (c) any liability that cannot be excluded under UK law. Your statutory rights as a consumer under UK law are not affected.
 

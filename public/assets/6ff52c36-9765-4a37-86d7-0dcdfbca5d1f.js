@@ -88,7 +88,7 @@ const WhySection = () => (
         <div className="card-lg">
           <div className="icon-box"><Icon name="wallet" size={22}/></div>
           <h3>Free first, Pro forever</h3>
-          <p>Download free and track up to 5 subscriptions. Pro is £4.99 for the first 1,000, then £14.99 — one payment, no renewal.</p>
+          <p>Download free and track up to 5 subscriptions. Pro is £4.99 for the first 1,000, then £9.99 — one payment, no renewal.</p>
           <div className="tag"><Icon name="infinity" size={14}/> Pro includes future updates</div>
         </div>
       </div>
@@ -123,7 +123,7 @@ const PricingIrony = () => (
           <h3>Pro (£4.99 launch)</h3>
           <div className="row2">
             <div className="price">£4.99</div>
-            <div className="strike">£14.99 after first 1,000</div>
+            <div className="strike">£9.99 after first 1,000</div>
           </div>
           <div className="lede">One-time. Not a trial. Not a renewal. Unlock forever on your Android devices.</div>
           <div className="divider"/>
@@ -258,7 +258,7 @@ const IOSSignup = () => {
 
 const FAQ_DATA = [
   { q: 'Is Pro really one-time?',
-    a: '<strong>Really.</strong> QuidTrack is free to download. Pro is £4.99 for the first 1,000, £14.99 after, and it is not a subscription. Pay once, unlock Pro forever.' },
+    a: '<strong>Really.</strong> QuidTrack is free to download. Pro is £4.99 for the first 1,000, £9.99 after, and it is not a subscription. Pay once, unlock Pro forever.' },
   { q: 'Do you see my bank data?',
     a: 'No. There\'s no Open Banking integration. Manual entry needs no bank data at all, and Pro imports are parsed locally on your phone. We\'re not a data business — we\'re a freemium app with a one-time Pro unlock.' },
   { q: 'Which UK banks work with CSV import?',
