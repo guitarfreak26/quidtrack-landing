@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="sq"><rect width="1024" height="1024" rx="230" ry="230"></rect></clipPath>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect width="1024" height="1024" fill="#000"></rect>
+    <circle cx="512" cy="520" r="360" fill="#BF5AF2" opacity="0.08"></circle>
+    <text x="512" y="720" text-anchor="middle" font-family="-apple-system, SF Pro Display, Inter" font-weight="700" font-size="720" fill="#BF5AF2" letter-spacing="-40">£</text>
+  </g>
+</svg>
