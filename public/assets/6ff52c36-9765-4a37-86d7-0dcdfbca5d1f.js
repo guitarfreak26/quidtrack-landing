@@ -199,7 +199,7 @@ const IOSSignup = () => {
 
     try {
       const body = new URLSearchParams(new FormData(form)).toString();
-      await fetch('/', {
+      await fetch('/forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body,
@@ -226,7 +226,7 @@ const IOSSignup = () => {
           {submitted ? (
             <div className="signup-success" role="status">You're on the list — we'll email when iOS ships.</div>
           ) : (
-            <form name="ios-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="signup-form" onSubmit={handleSubmit}>
+            <form name="ios-waitlist" method="POST" action="/forms.html" data-netlify="true" netlify-honeypot="bot-field" className="signup-form" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="ios-waitlist" />
               <p className="hidden"><input name="bot-field" /></p>
               <input type="email" name="email" placeholder="you@example.com" required />
