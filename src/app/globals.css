@@ -769,6 +769,18 @@ footer { padding: 72px 0 56px; border-top: 1px solid var(--hairline); }
 }
 .signup-form input:focus { border-color: var(--accent-line); box-shadow: 0 0 0 4px var(--accent-soft); }
 .signup-form .btn-pill { border: none; white-space: nowrap; cursor: pointer; }
+.signup-form .btn-pill:disabled { cursor: default; opacity: .75; }
+.signup-success {
+  min-height: 48px;
+  border-radius: 16px;
+  border: 1px solid var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--fg);
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  font: 700 15px/1.4 var(--font-text);
+}
 @media (max-width: 767px) {
   .signup-card { grid-template-columns: 1fr; padding: 24px; }
   .signup-form { flex-direction: column; align-items: stretch; }

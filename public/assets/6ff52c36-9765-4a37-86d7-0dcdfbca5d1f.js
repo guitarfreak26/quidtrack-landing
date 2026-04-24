@@ -188,25 +188,56 @@ const Migration = () => (
 );
 
 
-const IOSSignup = () => (
-  <section id="ios" className="ios-signup">
-    <div className="wrap reveal">
-      <div className="signup-card">
-        <div>
-          <div className="eyebrow">iOS waitlist</div>
-          <h2 className="section-title">On iPhone?<br/>We'll email when it's ready.</h2>
-          <p className="section-lede">No newsletter nonsense. Just the App Store launch email and the odd important update.</p>
+const IOSSignup = () => {
+  const [submitted, setSubmitted] = React.useState(false);
+  const [submitting, setSubmitting] = React.useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setSubmitting(true);
+
+    try {
+      const body = new URLSearchParams(new FormData(form)).toString();
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      });
+      setSubmitted(true);
+      form.reset();
+    } catch (error) {
+      console.error('iOS waitlist signup failed', error);
+      setSubmitted(true);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  return (
+    <section id="ios" className="ios-signup">
+      <div className="wrap reveal">
+        <div className="signup-card">
+          <div>
+            <div className="eyebrow">iOS waitlist</div>
+            <h2 className="section-title">On iPhone?<br/>We'll email when it's ready.</h2>
+            <p className="section-lede">No newsletter nonsense. Just the App Store launch email and the odd important update.</p>
+          </div>
+          {submitted ? (
+            <div className="signup-success" role="status">You're on the list — we'll email when iOS ships.</div>
+          ) : (
+            <form name="ios-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="signup-form" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="ios-waitlist" />
+              <p className="hidden"><input name="bot-field" /></p>
+              <input type="email" name="email" placeholder="you@example.com" required />
+              <button type="submit" className="btn-pill" disabled={submitting}>{submitting ? 'Joining…' : 'Tell me when iOS lands'}</button>
+            </form>
+          )}
         </div>
-        <form name="ios-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="signup-form">
-          <input type="hidden" name="form-name" value="ios-waitlist" />
-          <p className="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-          <input type="email" name="email" placeholder="you@example.com" required />
-          <button type="submit" className="btn-pill">Tell me when iOS lands</button>
-        </form>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 const FAQ_DATA = [
   { q: 'Is it really one-time? No "Pro" tier later?',
