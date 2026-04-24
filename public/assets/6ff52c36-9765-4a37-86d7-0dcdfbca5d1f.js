@@ -251,7 +251,7 @@ const FAQ_DATA = [
   { q: 'When is iOS coming?',
     a: 'Android first, iOS later this year. Build the thing properly on one platform, then port it. If you\'re on iPhone, sign up below and we\'ll email the day it\'s on the App Store.' },
   { q: 'Why should I trust a new app with this?',
-    a: 'You probably shouldn\'t yet. Read the privacy policy (short — we wrote it ourselves, no legalese). If you\'re not convinced, the £4.99 is refundable via Google Play for 48 hours. And we\'re made by ALARA Studios — real people, UK-registered.' },
+    a: 'You probably shouldn\'t yet. Read the privacy policy (short — we wrote it ourselves, no legalese). If you\'re not convinced, the £4.99 is refundable via Google Play for 48 hours. And we\'re made by ALARA Studios — real people, UK-based.' },
 ];
 
 const FAQ = () => {
@@ -303,13 +303,13 @@ const Footer = () => (
         </div>
         <div className="footer-col">
           <h5>Get in touch</h5>
-          <a href="mailto:support@quidtrack.app">support@quidtrack.app</a>
+          <a href="mailto:guitarfreak2689@gmail.com">guitarfreak2689@gmail.com</a>
           <a>Press kit</a>
           <a>Roadmap</a>
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="copy">© 2026 ALARA Studios Ltd. All rights reserved.</div>
+        <div className="copy">© 2026 ALARA Studios. All rights reserved.</div>
         <div className="tag-alara">Made with <b>Inter</b>, cynicism, and far too much tea.</div>
       </div>
     </div>

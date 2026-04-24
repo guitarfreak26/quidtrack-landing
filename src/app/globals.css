@@ -787,10 +787,79 @@ footer { padding: 72px 0 56px; border-top: 1px solid var(--hairline); }
   .signup-form .btn-pill { width: 100%; justify-content: center; }
 }
 
-.legal-page { max-width: 760px; margin: 0 auto; padding: 96px 24px; color: var(--fg); font-family: var(--font-text); }
-.legal-page h1 { font: 700 48px/1 var(--font-display); letter-spacing: -0.04em; margin: 24px 0 12px; }
-.legal-page h2 { font: 700 22px/1.2 var(--font-display); margin-top: 36px; }
-.legal-page p { color: var(--fg-2); font-size: 17px; line-height: 1.7; }
-.legal-page a { color: var(--accent); }
-.legal-back { text-decoration: none; font-weight: 700; }
-.updated { color: var(--fg-3) !important; font-size: 13px !important; }
+.legal-page {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 96px 24px;
+  color: var(--fg);
+  font-family: var(--font-text);
+}
+.legal-back {
+  display: inline-flex;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.legal-back:hover { color: var(--fg); }
+.legal-markdown { font-size: 17px; line-height: 1.75; }
+.legal-markdown h1 {
+  font: 700 48px/1 var(--font-display);
+  letter-spacing: -0.04em;
+  margin: 0 0 18px;
+}
+.legal-markdown h2 {
+  font: 700 24px/1.2 var(--font-display);
+  letter-spacing: -0.025em;
+  margin: 44px 0 12px;
+}
+.legal-markdown h3 {
+  font: 700 18px/1.3 var(--font-display);
+  margin: 28px 0 8px;
+}
+.legal-markdown p,
+.legal-markdown li,
+.legal-markdown td,
+.legal-markdown th {
+  color: var(--fg-2);
+}
+.legal-markdown p { margin: 14px 0; }
+.legal-markdown strong { color: var(--fg); font-weight: 700; }
+.legal-markdown a { color: var(--accent); text-decoration-color: var(--accent-line); }
+.legal-markdown a:hover { color: var(--fg); }
+.legal-markdown ul { padding-left: 1.35rem; margin: 14px 0 18px; }
+.legal-markdown li { margin: 8px 0; }
+.legal-markdown hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 32px 0;
+}
+.legal-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.legal-markdown th,
+.legal-markdown td {
+  border: 1px solid var(--hairline);
+  padding: 10px 12px;
+  vertical-align: top;
+}
+.legal-markdown th {
+  color: var(--fg);
+  background: var(--surface);
+  font-weight: 700;
+}
+.legal-markdown blockquote {
+  margin: 20px 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--accent);
+  color: var(--fg-2);
+}
+@media (max-width: 767px) {
+  .legal-page { padding: 72px 20px; }
+  .legal-markdown h1 { font-size: 38px; }
+}

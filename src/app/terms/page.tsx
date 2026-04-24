@@ -1,16 +1,30 @@
-import Link from "next/link";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 
-export const metadata = { title: "QuidTrack Terms of Use" };
+import type { Metadata } from "next";
+import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+export const metadata: Metadata = {
+  title: "QuidTrack — Terms of Service",
+  robots: { index: false, follow: false },
+};
+
+const termsMarkdown = readFileSync(
+  join(process.cwd(), "src/content/quidtrack-terms-of-service.md"),
+  "utf8"
+);
 
 export default function Page() {
   return (
     <main className="legal-page">
-      <Link href="/" className="legal-back">← QuidTrack</Link>
-      <h1>Terms of Use</h1>
-      <p className="updated">Last updated: 24 April 2026</p>
-      <p>QuidTrack is provided as a subscription tracking tool. You remain responsible for checking charges, cancelling services, and verifying reminders. The app does not provide financial advice and does not cancel subscriptions on your behalf.</p>
-      <h2>Contact</h2>
-      <p>Email <a href="mailto:support@quidtrack.app">support@quidtrack.app</a>.</p>
+      <Link href="/" className="legal-back">
+        ← QuidTrack
+      </Link>
+      <div className="legal-markdown">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{termsMarkdown}</ReactMarkdown>
+      </div>
     </main>
   );
 }
