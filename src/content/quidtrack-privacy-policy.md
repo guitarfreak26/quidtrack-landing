@@ -1,11 +1,11 @@
 # QuidTrack Privacy Policy
 
-**Last updated:** 24 April 2026
-**Effective date:** 24 April 2026
+**Last updated:** 25 April 2026
+**Effective date:** 25 April 2026
 
 ## Plain English summary
 
-QuidTrack is designed to keep your most sensitive financial data **on your device**. Bank, PayPal, Emma, and Snoop CSV imports are parsed locally. We never receive your bank statements, PayPal export files, account number, balance, or full transaction history.
+QuidTrack is designed to keep your most sensitive financial data **on your device**. Bank, PayPal, Emma, and Snoop CSV and PDF imports are parsed locally. We never receive your bank statements, PayPal export files, account number, balance, or full transaction history.
 
 QuidTrack is free to download — you can track up to 5 recurring outgoings without paying anything or creating an account with us. If you upgrade to QuidTrack Pro (£4.99 one-time launch price) to unlock unlimited bills, subscriptions, and extra features, Google Play handles the payment. We never see your card details.
 
@@ -35,17 +35,17 @@ We are the "data controller" under UK GDPR for the limited data described below.
 
 - **Purchase record** — QuidTrack is free to download with a 5-outgoing free tier. If you choose to upgrade to QuidTrack Pro (£4.99 one-time at launch, £9.99 after the first 1,000 customers) to unlock unlimited tracking and extra features, Google Play processes the payment and stores the purchase record against your Google account. We do not receive your card details, name, or address. We receive only an anonymised purchase confirmation so Pro features unlock on your devices. If you stay on the free tier, no purchase record exists. Google's privacy policy governs this data: https://policies.google.com/privacy
 
-### 2.3 Bank, PayPal, Emma, and Snoop CSV import data
+### 2.3 Bank, PayPal, Emma, and Snoop CSV and PDF import data
 
-- **CSV files are parsed locally on your device.** We never receive, upload, store, or process your bank statements, PayPal Automatic Payments exports, Emma exports, or Snoop exports on our servers.
+- **CSV and PDF files are parsed locally on your device.** We never receive, upload, store, or process your bank CSV files, PDF bank statements, PayPal Automatic Payments exports, Emma exports, or Snoop exports on our servers.
 - **Account numbers, balances, and full transaction histories never leave your phone.**
-- QuidTrack extracts recurring payment candidates locally, shows them for review, and immediately discards the raw CSV content after parsing.
+- QuidTrack extracts recurring payment candidates locally, shows them for review, and immediately discards the raw CSV or PDF content after parsing.
 - If you choose to add a detected recurring outgoing, only the structured item you selected is saved (name, amount, billing cycle, next payment date, category, notes, and optional links).
 
 ### 2.4 Data we deliberately do NOT collect
 
 - Your bank statements or bank login credentials
-- Your raw CSV files, account number, balance, or full transaction history
+- Your raw CSV files, PDF bank statements, account number, balance, or full transaction history
 - Analytics, crash reports, or behavioural tracking
 - Your name, address, phone number, or date of birth
 - Your location
@@ -53,21 +53,21 @@ We are the "data controller" under UK GDPR for the limited data described below.
 ### 2.5 Data stored on your device or in sync
 
 - **Outgoings data, catalogue, preferences** — stored locally on your device.
-- **Optional cloud sync** — if you enable sync, your saved recurring outgoings and settings are stored in Firebase Firestore under your anonymous or signed-in user ID. Source CSV data is never synced.
+- **Optional cloud sync** — if you enable sync, your saved recurring outgoings and settings are stored in Firebase Firestore under your anonymous or signed-in user ID. Source CSV/PDF data is never synced.
 - **On this device only** — you can choose not to use sync. In that mode your saved outgoings remain local to that device.
 
 ## 3. Legal basis for processing (UK GDPR Article 6)
 
 - **Email waitlist:** consent (Article 6(1)(a)). You opted in by submitting the form.
 - **Pro purchase fulfilment:** contract performance (Article 6(1)(b)). If you upgrade to QuidTrack Pro, we need the purchase record to unlock the Pro features you paid for. Free-tier users are not subject to this processing.
-- **Local CSV import:** contract performance (Article 6(1)(b)). Bank, PayPal, Emma, and Snoop CSV parsing is needed to provide the import feature you requested, and happens locally on your device.
+- **Local CSV/PDF import:** contract performance (Article 6(1)(b)). Bank, PayPal, Emma, and Snoop CSV/PDF parsing is needed to provide the import feature you requested, and happens locally on your device.
 - **Optional sync:** contract performance (Article 6(1)(b)). If you enable sync, we store your chosen QuidTrack data so it can appear on your devices.
 
 ## 4. How long we keep your data
 
 - **Waitlist email:** deleted within 30 days of the iOS launch email being sent, or immediately on your unsubscribe request — whichever comes first.
 - **Purchase record (Pro upgraders only):** retained as long as Google Play retains it, per Google's policies. We have no separate copy.
-- **Raw CSV data:** discarded immediately after local parsing. It is never sent to our servers.
+- **Raw CSV and PDF data:** discarded immediately after local parsing. It is never sent to our servers.
 - **On-device data:** retained until you delete the app or clear the data. We cannot delete local-only data for you — it's on your device.
 - **Synced data:** retained while your QuidTrack account/sync profile exists. You can request deletion by emailing privacy@quidtrack.app.
 
@@ -84,7 +84,7 @@ We share limited data only with the following service providers, strictly to run
 | Firebase (Google Cloud) | Anonymous auth ID, synced outgoings/settings if sync is enabled | Authentication, Firestore sync, and server-side entitlement checks |
 | Netlify | Waitlist email submissions | Website hosting + form handling |
 
-We do not share data with advertisers, data brokers, analytics companies, or marketing platforms. We do not use Anthropic, OpenAI, or any other AI provider for CSV import in v1.
+We do not share data with advertisers, data brokers, analytics companies, or marketing platforms. We do not use Anthropic, OpenAI, or any other AI provider for CSV/PDF import in v1.
 
 ## 6. International transfers
 
@@ -114,7 +114,7 @@ QuidTrack is not directed at children under 13 and we do not knowingly collect d
 ## 9. Security
 
 - Waitlist emails are stored on Netlify, encrypted in transit (HTTPS) and at rest.
-- Raw CSV imports stay on your device and are not uploaded.
+- Raw CSV/PDF imports stay on your device and are not uploaded.
 - Synced QuidTrack data is stored in Firebase Firestore and protected by user-scoped access rules.
 - We recommend enabling two-factor authentication on your Google / Apple account.
 

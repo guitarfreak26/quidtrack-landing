@@ -1,11 +1,11 @@
 # QuidTrack Terms of Service
 
-**Last updated:** 24 April 2026
-**Effective date:** 24 April 2026
+**Last updated:** 25 April 2026
+**Effective date:** 25 April 2026
 
 ## Plain English summary
 
-QuidTrack is free to download. You can track up to 5 recurring outgoings without paying anything. If you want more — unlimited bills and subscriptions, CSV, PayPal, Emma, and Snoop imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£9.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
+QuidTrack is free to download. You can track up to 5 recurring outgoings without paying anything. If you want more — unlimited bills and subscriptions, CSV/PDF, PayPal, Emma, and Snoop imports, home-screen widgets, cross-device sync, all future updates — you can upgrade to **QuidTrack Pro** for **£4.99 one-time** at launch (£9.99 after the first 1,000 customers). Pay once, keep Pro forever, on every Android device linked to your Google Play account. No subscription, no renewal, no surprise billing.
 
 In return, you agree to use the app for personal use, not to pirate or resell it, and you accept that software comes with normal "we can't promise perfection" caveats.
 
@@ -38,7 +38,7 @@ The free tier is available indefinitely. We will not retroactively downgrade or 
 If you want more than 5 recurring outgoings, or you want the extra Pro features, you can upgrade to **QuidTrack Pro** via Google Play. Pro unlocks:
 
 - **Unlimited bills and subscriptions**
-- **CSV, PayPal, Emma, and Snoop imports**
+- **CSV/PDF, PayPal, Emma, and Snoop imports**
 - **Home-screen widgets**
 - **Cross-device sync** (Firebase-backed sync on Android, iCloud options when iOS launches)
 - **All future Pro updates**
@@ -75,7 +75,7 @@ You may:
 
 - Use the app for personal recurring outgoing tracking on the free tier (up to 5 outgoings) or Pro (unlimited).
 - Install QuidTrack on any Android device. If you've upgraded to Pro, Pro features unlock on every device linked to the Google Play account that purchased Pro.
-- Add recurring outgoings manually, or — on Pro — import them via CSV, PayPal, Emma, or Snoop.
+- Add recurring outgoings manually, or — on Pro — import them via CSV/PDF, PayPal, Emma, or Snoop.
 - Sync your saved QuidTrack data across devices if you enable sync (Pro feature).
 
 You may not:
@@ -96,8 +96,8 @@ We make reasonable efforts to keep cancellation URLs accurate, but service provi
 We handle your data per our [Privacy Policy](/privacy). The short version:
 
 - By default your outgoings data lives on your device. If you enable sync, only the structured QuidTrack items you choose to save are stored in your user-scoped cloud account.
-- We do not read your bank statements or PayPal export files. CSV, PayPal, Emma, and Snoop imports (Pro) are parsed locally. Raw CSV files, balances, account numbers, and full transaction histories never leave your device.
-- Optional cloud sync (Pro) stores only the QuidTrack items you choose to save, under your user account. Source CSV data is never synced.
+- We do not read your bank statements or PayPal export files. CSV/PDF, PayPal, Emma, and Snoop imports (Pro) are parsed locally. Raw CSV files, PDF bank statements, balances, account numbers, and full transaction histories never leave your device.
+- Optional cloud sync (Pro) stores only the QuidTrack items you choose to save, under your user account. Source CSV/PDF data is never synced.
 
 ## 7. No financial advice
 
@@ -106,7 +106,7 @@ QuidTrack shows you what you're spending. It is **not** a regulated financial pr
 ## 8. Availability and changes
 
 - We aim to keep the app working reliably but cannot guarantee 100% uptime of cloud-dependent features (waitlist, catalogue updates, Pro sync).
-- We may add features, change features, or retire features. We will not remove core Pro functionality you paid for (unlimited tracking, CSV/PayPal/Emma/Snoop imports, widgets, cross-device sync, one-time pricing).
+- We may add features, change features, or retire features. We will not remove core Pro functionality you paid for (unlimited tracking, CSV/PDF/PayPal/Emma/Snoop imports, widgets, cross-device sync, one-time pricing).
 - We may update the catalogue of UK services at any time.
 
 ## 9. Limitation of liability

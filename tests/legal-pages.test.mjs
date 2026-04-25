@@ -13,10 +13,11 @@ test('legal markdown content reflects current QuidTrack positioning and pricing'
 
   assert.match(privacy, /QuidTrack is free to download — you can track up to 5 recurring outgoings/);
   assert.match(privacy, /Data collected by Google Play \(only if you upgrade to Pro\)/);
-  assert.match(privacy, /Bank, PayPal, Emma, and Snoop CSV import data/);
-  assert.match(privacy, /CSV files are parsed locally on your device/);
+  assert.match(privacy, /Bank, PayPal, Emma, and Snoop CSV and PDF import data/);
+  assert.match(privacy, /CSV and PDF files are parsed locally on your device/);
+  assert.match(privacy, /PDF bank statements/);
   assert.match(privacy, /PayPal Automatic Payments exports/);
-  assert.match(privacy, /\*\*Raw CSV data:\*\* discarded immediately after local parsing/);
+  assert.match(privacy, /\*\*Raw CSV and PDF data:\*\* discarded immediately after local parsing/);
   assert.match(privacy, /RevenueCat/);
   assert.match(privacy, /Firebase \(Google Cloud\)/);
   assert.match(privacy, /QuidTrack is a tracking tool, not financial advice/);
@@ -27,7 +28,7 @@ test('legal markdown content reflects current QuidTrack positioning and pricing'
   assert.match(terms, /£9\.99 after the first 1,000 customers/);
   assert.match(terms, /UK-focused recurring outgoings tracker/);
   assert.match(terms, /rent, mortgage, council tax, car finance, energy, broadband, insurance/);
-  assert.match(terms, /Raw CSV files, balances, account numbers, and full transaction histories never leave your device/);
+  assert.match(terms, /Raw CSV files, PDF bank statements, balances, account numbers, and full transaction histories never leave your device/);
   assert.match(combined, /\*\*Registered office:\*\* \[REGISTERED OFFICE — to be added before launch\]/);
   assert.match(privacy, /\*\*General:\*\* hello@quidtrack\.app/);
   assert.match(privacy, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);
@@ -87,8 +88,9 @@ test('homepage positions QuidTrack as freemium with manual entry trust copy', ()
   assert.match(combined, /local-only/);
   assert.match(combined, /Pro \(£4\.99 launch/);
   assert.match(combined, /£9\.99 after first 1,000/);
-  assert.match(combined, /PayPal \+ CSV import/);
-  assert.match(combined, /CSV, PayPal \+ Emma imports/);
+  assert.match(combined, /PayPal \+ CSV\/PDF import/);
+  assert.match(combined, /CSV, PDF, PayPal \+ Emma imports/);
+  assert.match(combined, /Which UK banks work with CSV and PDF import/);
   assert.match(combined, /Add manually — no bank data required/);
   assert.doesNotMatch(combined, /£6\.99/);
 });

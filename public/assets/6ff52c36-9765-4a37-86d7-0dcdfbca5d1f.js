@@ -99,7 +99,7 @@ const WhySection = () => (
         <div className="card-lg">
           <div className="icon-box"><Icon name="lock" size={22}/></div>
           <h3>No Open Banking login</h3>
-          <p>Add manually — no bank data required. If you upgrade to Pro, bank CSV, PayPal, Emma, and Snoop imports are parsed on your phone. We never see your statements.</p>
+          <p>Add manually — no bank data required. If you upgrade to Pro, bank CSV, PDF statements, PayPal, Emma, and Snoop imports are parsed on your phone. We never see your statements.</p>
           <div className="tag"><Icon name="shield" size={14}/> Manual entry is free</div>
         </div>
         <div className="card-lg">
@@ -146,7 +146,7 @@ const PricingIrony = () => (
           <div className="divider"/>
           <div className="feats">
             <div><span className="ico"><Icon name="check" size={16}/></span>Unlimited bills and subscriptions</div>
-            <div><span className="ico"><Icon name="check" size={16}/></span>CSV, PayPal + Emma imports</div>
+            <div><span className="ico"><Icon name="check" size={16}/></span>CSV, PDF, PayPal + Emma imports</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Home-screen widgets</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>Cross-device sync</div>
             <div><span className="ico"><Icon name="check" size={16}/></span>All future updates</div>
@@ -160,11 +160,11 @@ const PricingIrony = () => (
 
 const FEATURES = [
   { ic:'infinity',  t:'Free manual tracking', d:'Add manually — no bank data required. Free users can track up to 5 recurring outgoings locally.' },
-  { ic:'sync',      t:'Private sync',  d:'Pro sync stores only the QuidTrack items you save. Raw CSV data, balances, and full statements never leave your phone.' },
+  { ic:'sync',      t:'Private sync',  d:'Pro sync stores only the QuidTrack items you save. Raw CSV/PDF data, balances, and full statements never leave your phone.' },
   { ic:'grid',      t:'Home-screen widgets',d:'Pro widgets show what you owe without unlocking the app.' },
   { ic:'calendar',  t:'Calendar view',      d:'See every charge on a month grid. Spot the weeks that quietly bleed you.' },
   { ic:'bell',      t:'Day-before reminders', d:'A push notification the night before, in case you\'d rather cancel than pay.' },
-  { ic:'upload',    t:'PayPal + CSV import',  d:'Find PayPal Automatic Payments and recurring bank CSV charges locally. Nothing leaves your device unless you choose sync.' },
+  { ic:'upload',    t:'PayPal + CSV/PDF import',  d:'Find PayPal Automatic Payments and recurring charges from bank CSVs and PDF statements locally. Nothing leaves your device unless you choose sync.' },
 ];
 
 const FeaturesSection = () => (
@@ -198,7 +198,7 @@ const Migration = () => (
               you pay too much for things?<br/>
               <span className="hi">Manual is free. Pro imports once. £4.99.</span>
             </h2>
-            <p className="lede">Start free with manual entry. Upgrade to Pro when you want CSV or Emma import, and keep the £115 a year. We won't judge — well, maybe a bit.</p>
+            <p className="lede">Start free with manual entry. Upgrade to Pro when you want CSV, PDF, or Emma import, and keep the £115 a year. We won't judge — well, maybe a bit.</p>
             <PlayBadge/>
           </div>
           <div className="compare">
@@ -278,8 +278,8 @@ const FAQ_DATA = [
     a: '<strong>Really.</strong> QuidTrack is free to download. Pro is £4.99 for the first 1,000, £9.99 after, and it is not a subscription. Pay once, unlock Pro forever.' },
   { q: 'Do you see my bank data?',
     a: 'No. There\'s no Open Banking integration. Manual entry needs no bank data at all, and Pro imports are parsed locally on your phone. We\'re not a data business — we\'re a freemium app with a one-time Pro unlock.' },
-  { q: 'Which UK banks work with CSV import?',
-    a: 'Monzo, Starling, Revolut, HSBC, Barclays, Lloyds, NatWest, Santander, Nationwide, First Direct, TSB, Metro, Chase UK, and a few more. If your bank exports a statement, we\'ll handle it.' },
+  { q: 'Which UK banks work with CSV and PDF import?',
+    a: 'CSV: Monzo, Starling, Revolut, HSBC, Barclays, Lloyds, NatWest, Santander, Nationwide, First Direct, TSB, Metro, Chase UK, and a few more. PDF statements: Lloyds, HSBC, Santander, and Barclays at launch — more banks added as we tune the parsers. If your bank exports a statement, we\'ll handle it.' },
   { q: 'Does it actually cancel subscriptions for me?',
     a: 'No. We show you what you\'re paying, when it\'s due, and how to cancel it (deep link to the provider). You do the tapping. Nobody \'cancels subscriptions for you\' without you logging in somewhere — and we\'re not asking you to do that.' },
   { q: 'When is iOS coming?',
