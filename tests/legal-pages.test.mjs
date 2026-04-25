@@ -55,6 +55,23 @@ test('privacy and terms pages render accordion markdown with noindex metadata', 
   assert.match(component, /aria-expanded/);
 });
 
+test('delete account page provides Play-required deletion request flow', () => {
+  const page = read('src/app/delete-account/page.tsx');
+  const form = read('src/app/delete-account/DeleteAccountForm.tsx');
+  const css = read('src/app/globals.css');
+
+  assert.match(page, /title:\s*["']QuidTrack — Delete Account["']/);
+  assert.match(page, /Settings\s*→ Account\s*→ Delete Account/);
+  assert.match(page, /support@quidtrack\.app/);
+  assert.match(form, /account email/i);
+  assert.match(form, /confirmation box/i);
+  assert.match(form, /reason/i);
+  assert.match(form, /requestAccountDeletion/);
+  assert.match(form, /received your request\. Your account and all associated data will be deleted\s+within 30 days/);
+  assert.match(css, /\.delete-account-page/);
+  assert.match(css, /\.delete-form/);
+});
+
 test('homepage positions QuidTrack as freemium with manual entry trust copy', () => {
   const runtime = read('src/app/LandingRuntime.tsx');
   const landingAsset = read('public/assets/6ff52c36-9765-4a37-86d7-0dcdfbca5d1f.js');
