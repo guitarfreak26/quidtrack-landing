@@ -1,7 +1,7 @@
 # QuidTrack Privacy Policy
 
-**Last updated:** 25 April 2026
-**Effective date:** 25 April 2026
+**Last updated:** 27 April 2026
+**Effective date:** 27 April 2026
 
 ## Plain English summary
 
@@ -126,7 +126,13 @@ QuidTrack is a tracking tool, not financial advice. It can help you see recurrin
 
 If we make material changes, we'll update the "Last updated" date at the top and — if we've collected your email — send you a notice. Continued use of the app after changes means you accept the updated policy.
 
-## 12. Contact
+## 12. Trademarks and brand logos
+
+All trademarks, logos, and brand names displayed in QuidTrack are the property of their respective owners. QuidTrack uses them solely to identify the subscriptions and services you have chosen to track. Their inclusion does not imply any partnership, endorsement, or affiliation with QuidTrack.
+
+Brand assets are sourced via Brandfetch (brandfetch.com).
+
+## 13. Contact
 
 **General:** hello@quidtrack.app
 **Support / refunds:** support@quidtrack.app
