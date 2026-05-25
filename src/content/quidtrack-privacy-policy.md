@@ -19,7 +19,7 @@ If you want the full legal version, keep reading.
 
 **Data controller:** ALARA Studios Ltd, a company registered in England and Wales (Company Number 16985196).
 
-**Registered office:** [REGISTERED OFFICE — to be added before launch]
+**Registered office:** Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA
 
 **Contact:** privacy@quidtrack.app
 

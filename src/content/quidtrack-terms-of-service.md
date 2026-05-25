@@ -13,7 +13,7 @@ In return, you agree to use the app for personal use, not to pirate or resell it
 
 **QuidTrack** is owned and operated by **ALARA Studios Ltd**, a company registered in England and Wales (Company Number 16985196).
 
-**Registered office:** [REGISTERED OFFICE — to be added before launch]
+**Registered office:** Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA
 
 **Contact:** privacy@quidtrack.app
 

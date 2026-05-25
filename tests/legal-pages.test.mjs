@@ -29,7 +29,10 @@ test('legal markdown content reflects current QuidTrack positioning and pricing'
   assert.match(terms, /UK-focused recurring outgoings tracker/);
   assert.match(terms, /rent, mortgage, council tax, car finance, energy, broadband, insurance/);
   assert.match(terms, /Raw CSV files, PDF bank statements, balances, account numbers, and full transaction histories never leave your device/);
-  assert.match(combined, /\*\*Registered office:\*\* \[REGISTERED OFFICE — to be added before launch\]/);
+  assert.match(
+    combined,
+    /\*\*Registered office:\*\* Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA/
+  );
   assert.match(privacy, /\*\*General:\*\* hello@quidtrack\.app/);
   assert.match(privacy, /\*\*Support \/ refunds:\*\* support@quidtrack\.app/);
   assert.match(privacy, /\*\*Privacy \/ UK GDPR requests:\*\* privacy@quidtrack\.app/);
